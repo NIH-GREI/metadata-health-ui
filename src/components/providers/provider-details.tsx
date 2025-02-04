@@ -7,7 +7,7 @@ import { useQuery } from '@tanstack/react-query';
 import { getProviderClientsList } from '@/lib/api/endpoints';
 import { EntityMetrics } from '@/components/common/entity-metrics';
 import { ResourceTypeStats } from '@/components/common/resource-type-stats';
-import { FieldStats, ViewMode } from '@/components/common/field-stats';
+import { FieldStats, ViewMode, CompareFieldStats } from '@/components/common/field-stats';
 import { ArrowLeft, BarChart2, List } from 'lucide-react';
 import Link from 'next/link';
 import {
@@ -31,6 +31,8 @@ import { Text } from '@/components/typography/typography';
 
 export function ProviderDetails({ providerId }: { providerId: string }) {
   const { data: provider, isLoading: isLoadingProvider, error: providerError } = useProviderDetails(providerId);
+  const { data: figshare } = useProviderDetails('cern');
+
   const { currentParams, navigateToProvider } = useProviderNavigation();
   const { view: viewParam, clientId } = currentParams;
   const [selectedTab, setSelectedTab] = useState(clientId ? "repositories" : "organization");
@@ -90,16 +92,16 @@ export function ProviderDetails({ providerId }: { providerId: string }) {
     }
   };
 
-  if (isLoadingProvider || 
-      (selectedTab === "repositories" && isLoadingClientsList) || 
-      (clientId && !isClientNotFound && (isLoadingClient || isLoadingClientStats))) {
+  if (isLoadingProvider ||
+    (selectedTab === "repositories" && isLoadingClientsList) ||
+    (clientId && !isClientNotFound && (isLoadingClient || isLoadingClientStats))) {
     return (
-      <LoadingOverlay 
-        isLoading={true} 
+      <LoadingOverlay
+        isLoading={true}
         message={
-          isLoadingProvider 
-            ? "Loading provider data..." 
-            : clientId 
+          isLoadingProvider
+            ? "Loading provider data..."
+            : clientId
               ? isLoadingClient
                 ? "Loading repository data..."
                 : "Loading repository statistics..."
@@ -160,178 +162,183 @@ export function ProviderDetails({ providerId }: { providerId: string }) {
   }
 
   return (
-    <StatsViewProvider>
-      <Stack spacing="lg">
-        {clientId && !clients.some(c => c.id === clientId) && (
-          <AlertError
-            title={ERROR_MESSAGES.REPOSITORY.TITLE}
-            description={ERROR_MESSAGES.REPOSITORY.NOT_FOUND(clientId)}
-          />
-        )}
-        
-        <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm hover:text-foreground transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <Text variant="small" className="text-muted-foreground hover:text-foreground transition-colors">Back to Search</Text>
-          </Link>
-          <div className="flex flex-col gap-2">
-            <Text variant="small" className="font-medium text-muted-foreground">Resource Type</Text>
-            <StatsSelector 
-              stats={selectedTab === "repositories" && selectedClientData ? selectedClientData.stats : provider.stats} 
-              className="w-48" 
-            />
-          </div>
-        </div>
-
+    <>
+      <StatsViewProvider>
         <Stack spacing="lg">
-          <div className="flex items-center justify-between">
+          {clientId && !clients.some(c => c.id === clientId) && (
+            <AlertError
+              title={ERROR_MESSAGES.REPOSITORY.TITLE}
+              description={ERROR_MESSAGES.REPOSITORY.NOT_FOUND(clientId)}
+            />
+          )}
+
+          <div className="flex items-center justify-between flex-column items-start">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-sm hover:text-foreground transition-colors"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <Text variant="small" className="text-muted-foreground hover:text-foreground transition-colors">Back to Search</Text>
+            </Link>
             <div className="flex flex-col gap-2">
-              <Text variant="small" className="font-medium text-muted-foreground">Organization</Text>
-              <div className="flex items-center gap-3">
-                <Text variant="h1" wrap={true}>{provider.attributes.name}</Text>
-                {provider.attributes.memberType && (
-                  <Badge variant="outline" className="inline-flex items-center justify-center w-fit">
-                    <Text variant="small" className="capitalize text-center">{provider.attributes.memberType.toLowerCase().replace(/_/g, ' ')}</Text>
-                  </Badge>
-                )}
-              </div>
-              <div className="flex items-center gap-2 text-sm">
-                {provider.attributes.rorId && (
-                  <>
-                    <Link 
-                      href={provider.attributes.rorId}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary hover:underline"
-                    >
-                      <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline" truncate={true}>{provider.attributes.rorId}</Text>
-                    </Link>
-                    <Text variant="small" className="text-muted-foreground">•</Text>
-                    <Link
-                      href={`https://commons.datacite.org/ror.org${provider.attributes.rorId.replace('https://ror.org', '')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-primary hover:underline"
-                    >
-                      <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline">View in DataCite Commons</Text>
-                    </Link>
-                  </>
-                )}
-              </div>
+              <Text variant="small" className="font-medium text-muted-foreground">Resource Type</Text>
+              <StatsSelector
+                stats={selectedTab === "repositories" && selectedClientData ? selectedClientData.stats : provider.stats}
+                className="w-48"
+              />
             </div>
-            {provider.attributes.isConsortium && (
-              <Badge variant="secondary" className="self-start">
-                <Text variant="small">Consortium</Text>
-              </Badge>
-            )}
           </div>
 
-          <Tabs value={selectedTab} onValueChange={handleTabChange}>
-            <div className="flex items-center justify-between mb-8">
-              <Tabs value={fieldStatsView} onValueChange={(value) => setFieldStatsView(value as ViewMode)}>
+          <Stack spacing="lg">
+            <div className="flex items-center justify-between flex-column items-start">
+              <div className="flex flex-col gap-2">
+                <Text variant="small" className="font-medium text-muted-foreground">Organization</Text>
+                <div className="flex items-center gap-3">
+                  <Text variant="h1" wrap={true}>{provider.attributes.name}</Text>
+                  {provider.attributes.memberType && (
+                    <Badge variant="outline" className="inline-flex items-center justify-center w-fit">
+                      <Text variant="small" className="capitalize text-center">{provider.attributes.memberType.toLowerCase().replace(/_/g, ' ')}</Text>
+                    </Badge>
+                  )}
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  {provider.attributes.rorId && (
+                    <>
+                      <Link
+                        href={provider.attributes.rorId}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary hover:underline"
+                      >
+                        <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline" truncate={true}>{provider.attributes.rorId}</Text>
+                      </Link>
+                      <Text variant="small" className="text-muted-foreground">•</Text>
+                      <Link
+                        href={`https://commons.datacite.org/ror.org${provider.attributes.rorId.replace('https://ror.org', '')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary hover:underline"
+                      >
+                        <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline">View in DataCite Commons</Text>
+                      </Link>
+                    </>
+                  )}
+                </div>
+              </div>
+              {provider.attributes.isConsortium && (
+                <Badge variant="secondary" className="self-start">
+                  <Text variant="small">Consortium</Text>
+                </Badge>
+              )}
+            </div>
+
+            <Tabs value={selectedTab} onValueChange={handleTabChange}>
+              <div className="flex items-center justify-between mb-8">
+                <Tabs value={fieldStatsView} onValueChange={(value) => setFieldStatsView(value as ViewMode)}>
+                  <TabsList>
+                    <TabsTrigger value={ViewMode.Summary}>
+                      <List className="h-4 w-4 mr-2" />
+                      <Text variant="small">Summary</Text>
+                    </TabsTrigger>
+                    <TabsTrigger value={ViewMode.Detailed}>
+                      <BarChart2 className="h-4 w-4 mr-2" />
+                      <Text variant="small">Detailed</Text>
+                    </TabsTrigger>
+                  </TabsList>
+                </Tabs>
                 <TabsList>
-                  <TabsTrigger value={ViewMode.Summary}>
-                    <List className="h-4 w-4 mr-2" />
-                    <Text variant="small">Summary</Text>
+                  <TabsTrigger value="organization">
+                    <Text variant="small">Organization</Text>
                   </TabsTrigger>
-                  <TabsTrigger value={ViewMode.Detailed}>
-                    <BarChart2 className="h-4 w-4 mr-2" />
-                    <Text variant="small">Detailed</Text>
+                  <TabsTrigger value="repositories">
+                    <Text variant="small">Repositories</Text>
                   </TabsTrigger>
                 </TabsList>
-              </Tabs>
-              <TabsList>
-                <TabsTrigger value="organization">
-                  <Text variant="small">Organization</Text>
-                </TabsTrigger>
-                <TabsTrigger value="repositories">
-                  <Text variant="small">Repositories</Text>
-                </TabsTrigger>
-              </TabsList>
-            </div>
+              </div>
 
-            {/* Keep both views mounted but hide/show with CSS */}
-            <div className={`${selectedTab === "organization" ? "block" : "hidden"}`}>
-              <Stack spacing="lg">
-                <EntityMetrics entity={provider} />
-                <div className={`${fieldStatsView === ViewMode.Detailed ? "block" : "hidden"}`}>
-                  <ResourceTypeStats provider={provider} />
-                </div>
-                <FieldStats 
-                  stats={provider.stats}
-                  viewMode={fieldStatsView}
-                  onToggleView={() => setFieldStatsView(fieldStatsView === ViewMode.Summary ? ViewMode.Detailed : ViewMode.Summary)}
-                />
-              </Stack>
-            </div>
+              {/* Keep both views mounted but hide/show with CSS */}
+              <div className={`${selectedTab === "organization" ? "block" : "hidden"}`}>
+                <Stack spacing="lg">
+                  <EntityMetrics entity={provider} />
+                  <div className={`${fieldStatsView === ViewMode.Detailed ? "block" : "hidden"}`}>
+                    <ResourceTypeStats provider={provider} />
+                  </div>
+                  <CompareFieldStats
+                    stats={provider.stats}
+                    figshareStats={figshare?.stats}
+                    viewMode={fieldStatsView}
+                    onToggleView={() => setFieldStatsView(fieldStatsView === ViewMode.Summary ? ViewMode.Detailed : ViewMode.Summary)}
+                  />
+                </Stack>
+              </div>
 
-            <div className={`${selectedTab === "repositories" ? "block" : "hidden"}`}>
-              <Stack spacing="lg">
-                <LoadingOverlay
-                  isLoading={isLoadingClientsList || isLoadingClient || isLoadingClientStats}
-                  message="Loading client data..."
-                >
-                  {clients.length === 0 ? (
-                    <Text variant="body" className="text-center text-muted-foreground">
-                      No repositories available for this organization
-                    </Text>
-                  ) : (
-                    <div className="grid gap-4">
-                      <Stack spacing="md">
-                        <Text variant="h2">Repositories</Text>
-                        <Select value={clientId || lastSelectedClientId || ""} onValueChange={handleRepositoryChange}>
-                          <SelectTrigger className="w-full">
-                            <SelectValue placeholder="Select a repository" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {clients.map((client) => (
-                              <SelectItem key={client.id} value={client.id}>
-                                <Text variant="small" truncate={true}>{client.attributes.name}</Text>
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </Stack>
-                      
-                      {selectedClientData && (
+              <div className={`${selectedTab === "repositories" ? "block" : "hidden"}`}>
+                <Stack spacing="lg">
+                  <LoadingOverlay
+                    isLoading={isLoadingClientsList || isLoadingClient || isLoadingClientStats}
+                    message="Loading client data..."
+                  >
+                    {clients.length === 0 ? (
+                      <Text variant="body" className="text-center text-muted-foreground">
+                        No repositories available for this organization
+                      </Text>
+                    ) : (
+                      <div className="grid gap-4">
                         <Stack spacing="md">
-                          <div className="border-t pt-6">
-                            <Stack spacing="sm">
-                              <Text variant="h2" wrap={true}>{selectedClientData.attributes.name}</Text>
-                              <Link
-                                href={`https://commons.datacite.org/repositories?query=${encodeURIComponent(selectedClientData.attributes.name || '')}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-primary hover:underline"
-                              >
-                                <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline">View in DataCite Commons</Text>
-                              </Link>
-                            </Stack>
-                          </div>
-                          <Stack spacing="lg">
-                            <EntityMetrics entity={selectedClientData} />
-                            <div className={`${fieldStatsView === ViewMode.Detailed ? "block" : "hidden"}`}>
-                              <ResourceTypeStats provider={selectedClientData} />
-                            </div>
-                            <FieldStats 
-                              stats={selectedClientData.stats}
-                              viewMode={fieldStatsView}
-                              onToggleView={() => setFieldStatsView(fieldStatsView === ViewMode.Summary ? ViewMode.Detailed : ViewMode.Summary)}
-                            />
-                          </Stack>
+                          <Text variant="h2">Repositories</Text>
+                          <Select value={clientId || lastSelectedClientId || ""} onValueChange={handleRepositoryChange}>
+                            <SelectTrigger className="w-full">
+                              <SelectValue placeholder="Select a repository" />
+                            </SelectTrigger>
+                            <SelectContent>
+                              {clients.map((client) => (
+                                <SelectItem key={client.id} value={client.id}>
+                                  <Text variant="small" truncate={true}>{client.attributes.name}</Text>
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
                         </Stack>
-                      )}
-                    </div>
-                  )}
-                </LoadingOverlay>
-              </Stack>
-            </div>
-          </Tabs>
+
+                        {selectedClientData && (
+                          <Stack spacing="md">
+                            <div className="border-t pt-6">
+                              <Stack spacing="sm">
+                                <Text variant="h2" wrap={true}>{selectedClientData.attributes.name}</Text>
+                                <Link
+                                  href={`https://commons.datacite.org/repositories?query=${encodeURIComponent(selectedClientData.attributes.name || '')}`}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="hover:text-primary hover:underline"
+                                >
+                                  <Text variant="small" className="text-muted-foreground hover:text-primary hover:underline">View in DataCite Commons</Text>
+                                </Link>
+                              </Stack>
+                            </div>
+                            <Stack spacing="lg">
+                              <EntityMetrics entity={selectedClientData} />
+                              <div className={`${fieldStatsView === ViewMode.Detailed ? "block" : "hidden"}`}>
+                                <ResourceTypeStats provider={selectedClientData} />
+                              </div>
+
+                              <CompareFieldStats
+                                stats={selectedClientData.stats}
+
+                                viewMode={fieldStatsView}
+                                onToggleView={() => setFieldStatsView(fieldStatsView === ViewMode.Summary ? ViewMode.Detailed : ViewMode.Summary)}
+                              />
+                            </Stack>
+                          </Stack>
+                        )}
+                      </div>
+                    )}
+                  </LoadingOverlay>
+                </Stack>
+              </div>
+            </Tabs>
+          </Stack>
         </Stack>
-      </Stack>
-    </StatsViewProvider>
+      </StatsViewProvider>
+    </>
   );
 }

@@ -201,3 +201,17 @@ h3 {
     color: rgba(0, 0, 0, 0.85);
   }
 }
+
+.stats-item {
+  display: flex;
+  align-items: center;
+}
+
+.stat-title {
+  margin-right: 1rem;
+}
+
+.fields-containers {
+  display: flex;
+  flex-direction: row;
+}

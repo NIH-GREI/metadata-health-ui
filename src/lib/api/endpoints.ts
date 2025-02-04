@@ -1,12 +1,15 @@
-// src/lib/api/endpoints.ts
+'use client'
+
 import { apiClient } from './client';
-import { 
-  Provider, 
-  Client, 
+import {
+  Provider,
+  Client,
   ApiResponse,
   ClientFetchError,
   ProviderFetchError
 } from '../types/api';
+
+import { fetchProviderData } from '@/utils/api';
 
 const API_BASE = '/api/v1';
 
@@ -21,8 +24,21 @@ export const getProviders = async (): Promise<Provider[]> => {
 
 export const getProviderDetails = async (providerId: string): Promise<Provider> => {
   try {
-    const response = await apiClient.get<ApiResponse<Provider>>(`${API_BASE}/providers/${providerId}`);
-    return response.data.data;
+    // First, try to get the data from the uploaded file
+    const response = await fetchProviderData(providerId);
+
+    if (response.data) {
+      // If we found the uploaded file, return its data
+      // const data = await response.json();
+      // return data;
+      const temp = response.data.data;
+      console.log("DATA", temp);
+      return temp;
+    }
+
+    // If no local file is found, try the API
+    const apiResponse = await apiClient.get<ApiResponse<Provider>>(`${API_BASE}/providers/${providerId}`);
+    return apiResponse.data.data;
   } catch (error) {
     throw new ProviderFetchError('Failed to fetch provider details', providerId, undefined, error);
   }

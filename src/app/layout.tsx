@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 import { QueryProvider } from '@/components/providers/query-provider';
 import { Navigation } from '@/components/layout/navigation';
 import { Footer } from '@/components/layout/footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -32,6 +34,7 @@ export default function RootLayout({
         <QueryProvider>
           <div className="min-h-screen bg-background flex flex-col">
             <Navigation />
+            <ToastContainer position="top-center" autoClose={5000} />
             <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 lg:py-8 flex-grow">
               {children}
             </main>

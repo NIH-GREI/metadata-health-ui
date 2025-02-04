@@ -27,23 +27,23 @@ export function Navigation() {
   }, [isMenuOpen]);
 
   return (
-    <nav 
-      className="border-b bg-white relative" 
+    <nav
+      className="border-b bg-white relative"
       aria-label="Main navigation"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 sm:h-28 items-center justify-between">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center gap-2 sm:gap-4 no-underline text-inherit hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 min-w-0 max-w-[calc(100%-4rem)]"
             prefetch={false}
             aria-label="Home - Metadata Health Reports"
           >
             <div className="flex items-center gap-2 sm:gap-4 min-w-0">
-              <Image 
-                src="/grei.svg" 
-                width={100} 
-                height={100} 
+              <Image
+                src="/grei.svg"
+                width={100}
+                height={100}
                 alt="GREI Logo"
                 className="h-10 w-auto sm:h-16 flex-shrink-0"
                 priority
@@ -100,8 +100,8 @@ export function Navigation() {
               role="menuitem"
               aria-current={pathname === '/' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 Search
@@ -113,8 +113,8 @@ export function Navigation() {
               role="menuitem"
               aria-current={pathname === '/compare' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 Compare
@@ -126,11 +126,24 @@ export function Navigation() {
               role="menuitem"
               aria-current={pathname === '/about' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 About
+              </Text>
+            </Link>
+            <Link
+              href="/upload"
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+              role="menuitem"
+              aria-current={pathname === '/upload' ? 'page' : undefined}
+            >
+              <Text
+                variant="body"
+                className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
+              >
+                Upload
               </Text>
             </Link>
           </div>
@@ -140,9 +153,8 @@ export function Navigation() {
       {/* Mobile menu */}
       {isMounted && (
         <div
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } sm:hidden absolute w-full bg-white border-b z-50`}
+          className={`${isMenuOpen ? 'block' : 'hidden'
+            } sm:hidden absolute w-full bg-white border-b z-50`}
           id="mobile-menu"
         >
           <div className="px-4 pt-2 pb-3 space-y-1">
@@ -152,8 +164,8 @@ export function Navigation() {
               onClick={() => setIsMenuOpen(false)}
               aria-current={pathname === '/' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 Search
@@ -165,8 +177,8 @@ export function Navigation() {
               onClick={() => setIsMenuOpen(false)}
               aria-current={pathname === '/compare' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 Compare
@@ -178,8 +190,8 @@ export function Navigation() {
               onClick={() => setIsMenuOpen(false)}
               aria-current={pathname === '/about' ? 'page' : undefined}
             >
-              <Text 
-                variant="body" 
+              <Text
+                variant="body"
                 className="text-datacite-dark-blue hover:text-datacite-light-blue transition-colors font-semibold"
               >
                 About

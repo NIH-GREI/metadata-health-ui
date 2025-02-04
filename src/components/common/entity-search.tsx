@@ -10,6 +10,7 @@ import { Provider, Client } from '@/lib/types/api';
 import { cn } from '@/lib/utils';
 import { Search } from 'lucide-react';
 import { Text } from '@/components/typography/typography';
+import { toast } from 'react-toastify';
 
 interface EntitySearchProps {
   mode: 'selection' | 'navigation';
@@ -26,11 +27,11 @@ function isClient(item: Provider | Client): item is Client {
   return item.type === 'clients';
 }
 
-export function EntitySearch({ 
-  mode, 
-  selectedItems = [], 
-  onSelect, 
-  className 
+export function EntitySearch({
+  mode,
+  selectedItems = [],
+  onSelect,
+  className
 }: EntitySearchProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [isOpen, setIsOpen] = useState(false);
@@ -141,6 +142,14 @@ export function EntitySearch({
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    const message = sessionStorage.getItem('toastMessage');
+    if (message) {
+      toast.success(message);
+      sessionStorage.removeItem('toastMessage'); // Prevent showing again on refresh
+    }
+  }, []);
+
   return (
     <div className={cn("w-full", className)}>
       <div className="relative" ref={searchRef}>
@@ -186,10 +195,10 @@ export function EntitySearch({
                 </div>
               )}
 
-              {!isLoadingProviders && !isLoadingClients && 
-               filteredProviders.length === 0 && filteredClients.length === 0 && (
-                <Text variant="small" className="p-2 text-muted-foreground">No results found</Text>
-              )}
+              {!isLoadingProviders && !isLoadingClients &&
+                filteredProviders.length === 0 && filteredClients.length === 0 && (
+                  <Text variant="small" className="p-2 text-muted-foreground">No results found</Text>
+                )}
 
               {filteredProviders.length > 0 && (
                 <div className="mb-2">
@@ -204,8 +213,8 @@ export function EntitySearch({
                         onClick={() => !isSelected && handleSelect(provider)}
                         className={cn(
                           "w-full rounded-sm px-2 py-1.5 text-left",
-                          isSelected 
-                            ? "cursor-not-allowed" 
+                          isSelected
+                            ? "cursor-not-allowed"
                             : "hover:bg-accent cursor-pointer"
                         )}
                         role="option"
@@ -237,8 +246,8 @@ export function EntitySearch({
                         onClick={() => !isSelected && handleSelect(client)}
                         className={cn(
                           "w-full rounded-sm px-2 py-1.5 text-left",
-                          isSelected 
-                            ? "cursor-not-allowed" 
+                          isSelected
+                            ? "cursor-not-allowed"
                             : "hover:bg-accent cursor-pointer"
                         )}
                         role="option"

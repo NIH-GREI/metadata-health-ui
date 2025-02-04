@@ -375,8 +375,8 @@ export const getCompletenessColor = (completeness: number, isText: boolean = fal
 };
 
 export function getResourceTypeColor(type: string): string {
-  return type in RESOURCE_TYPE_COLORS 
-    ? RESOURCE_TYPE_COLORS[type as ResourceType] 
+  return type in RESOURCE_TYPE_COLORS
+    ? RESOURCE_TYPE_COLORS[type as ResourceType]
     : RESOURCE_TYPE_COLORS.Other;
 }
 
@@ -399,20 +399,20 @@ export function getFieldCategory(field: string): FieldCategory | undefined {
 }
 
 export function getFieldDisplayLabel(field: string): string {
-  console.log('Getting display label for field:', field);
-  console.log('Metadata exists:', !!METADATA_FIELDS[field]);
-  
+  // console.log('Getting display label for field:', field);
+  // console.log('Metadata exists:', !!METADATA_FIELDS[field]);
+
   const metadata = METADATA_FIELDS[field];
   return metadata?.displayLabel || field;
 }
 
 export function getSubfieldDisplayLabel(field: string, subfield: string): string {
-  return METADATA_FIELDS[field]?.subfields?.[subfield]?.displayLabel || 
+  return METADATA_FIELDS[field]?.subfields?.[subfield]?.displayLabel ||
     subfield.split(/(?=[A-Z])/).map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
 
 export function getSubfieldDescription(field: string, subfield: string): string {
-  return METADATA_FIELDS[field]?.subfields?.[subfield]?.description || 
+  return METADATA_FIELDS[field]?.subfields?.[subfield]?.description ||
     'Additional metadata subfield';
 }
 
@@ -467,11 +467,9 @@ export const ERROR_MESSAGES = {
     TITLE: 'Unable to Load Organization'
   },
   REPOSITORY: {
-    LOAD_FAILED: (failedCount: number, successCount: number) => 
-      `Unable to load data for ${failedCount} ${
-        failedCount === 1 ? 'repository' : 'repositories'
-      }. Displaying information for ${successCount} available ${
-        successCount === 1 ? 'repository' : 'repositories'
+    LOAD_FAILED: (failedCount: number, successCount: number) =>
+      `Unable to load data for ${failedCount} ${failedCount === 1 ? 'repository' : 'repositories'
+      }. Displaying information for ${successCount} available ${successCount === 1 ? 'repository' : 'repositories'
       }.`,
     FAILED_ITEM: (id: string) => `Failed to load repository: ${id}`,
     NOT_FOUND: (id: string) => `Repository "${id}" is not available. Showing organization overview instead.`,

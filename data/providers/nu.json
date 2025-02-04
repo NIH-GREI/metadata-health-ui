@@ -1,0 +1,3833 @@
+{
+  "data": {
+    "id": "nu",
+    "type": "providers",
+    "attributes": {
+      "name": "Northwestern University Libraries",
+      "displayName": "Northwestern University Libraries",
+      "symbol": "NU",
+      "website": "https://www.library.northwestern.edu/",
+      "description": null,
+      "region": "AMER",
+      "country": "US",
+      "logoUrl": null,
+      "memberType": "direct_member",
+      "organizationType": "academicInstitution",
+      "focusArea": "general",
+      "nonProfitStatus": "non-profit",
+      "isActive": true,
+      "joined": null,
+      "rorId": "https://ror.org/000e0be47",
+      "created": "2019-06-19T15:47:28.000Z",
+      "updated": "2024-10-18T16:14:32.000Z",
+      "doiEstimate": 0
+    },
+    "relationships": {
+      "clients": [
+        "nu.arch",
+        "nu.bats",
+        "nu.press",
+        "nu.rplrt",
+        "nu.itrc"
+      ]
+    },
+    "stats": {
+      "summary": {
+        "count": 6239,
+        "fields": {
+          "alternateIdentifiers": {
+            "count": 54,
+            "instances": 54,
+            "missing": 6185,
+            "fieldStatus": "optional",
+            "completeness": 0.0087
+          },
+          "identifier": {
+            "count": 6239,
+            "instances": 6239,
+            "missing": 0,
+            "fieldStatus": "mandatory",
+            "completeness": 1
+          },
+          "language": {
+            "count": 23,
+            "instances": 23,
+            "missing": 6216,
+            "fieldStatus": "optional",
+            "completeness": 0.0037
+          },
+          "geoLocations": {
+            "count": 0,
+            "instances": 0,
+            "missing": 6239,
+            "fieldStatus": "recommended",
+            "completeness": 0
+          },
+          "rights": {
+            "count": 28,
+            "instances": 29,
+            "missing": 6211,
+            "fieldStatus": "optional",
+            "completeness": 0.0045
+          },
+          "titles": {
+            "count": 6239,
+            "instances": 6269,
+            "missing": 0,
+            "fieldStatus": "mandatory",
+            "completeness": 1
+          },
+          "publicationYear": {
+            "count": 5823,
+            "instances": 5823,
+            "missing": 416,
+            "fieldStatus": "mandatory",
+            "completeness": 0.9333
+          },
+          "resourceType": {
+            "count": 6239,
+            "instances": 6239,
+            "missing": 0,
+            "fieldStatus": "mandatory",
+            "completeness": 1,
+            "subfields": {
+              "resourceTypeGeneral": {
+                "count": 6239,
+                "instances": 6239,
+                "missing": 0,
+                "completeness": 1,
+                "values": {
+                  "Software": 6,
+                  "Audiovisual": 23,
+                  "Image": 24,
+                  "Sound": 1,
+                  "Text": 4690,
+                  "Dataset": 160,
+                  "Collection": 8,
+                  "Journal": 1,
+                  "Other": 1286,
+                  "JournalArticle": 36,
+                  "Book": 4
+                }
+              }
+            }
+          },
+          "date": {
+            "count": 6197,
+            "instances": 6199,
+            "missing": 42,
+            "fieldStatus": "recommended",
+            "completeness": 0.9933
+          },
+          "relatedItems": {
+            "count": 2,
+            "instances": 2,
+            "missing": 6237,
+            "fieldStatus": "optional",
+            "completeness": 0.0003
+          },
+          "formats": {
+            "count": 1,
+            "instances": 1,
+            "missing": 6238,
+            "fieldStatus": "optional",
+            "completeness": 0.0002
+          },
+          "subjects": {
+            "count": 11,
+            "instances": 45,
+            "missing": 6228,
+            "fieldStatus": "recommended",
+            "completeness": 0.0018
+          },
+          "version": {
+            "count": 0,
+            "instances": 0,
+            "missing": 6239,
+            "fieldStatus": "optional",
+            "completeness": 0
+          },
+          "relatedIdentifiers": {
+            "count": 22,
+            "instances": 37,
+            "missing": 6217,
+            "fieldStatus": "recommended",
+            "completeness": 0.0035,
+            "subfields": {
+              "relationType": {
+                "count": 22,
+                "instances": 37,
+                "missing": 6217,
+                "completeness": 0.0035,
+                "values": {
+                  "IsPublishedIn": 37
+                }
+              },
+              "relatedIdentifierType": {
+                "count": 22,
+                "instances": 37,
+                "missing": 6217,
+                "completeness": 0.0035,
+                "values": {
+                  "DOI": 15,
+                  "URL": 1,
+                  "ISSN": 21
+                }
+              },
+              "resourceTypeGeneral": {
+                "count": 22,
+                "instances": 36,
+                "missing": 6217,
+                "completeness": 0.0035,
+                "values": {
+                  "Journal": 36
+                }
+              }
+            }
+          },
+          "contributors": {
+            "count": 0,
+            "instances": 0,
+            "missing": 6239,
+            "fieldStatus": "recommended",
+            "completeness": 0,
+            "subfields": {
+              "affiliation": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "affiliationIdentifier": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "contributorType": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0,
+                "values": {}
+              },
+              "affiliationIdentifierScheme": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0,
+                "values": {}
+              },
+              "nameIdentifierScheme": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0,
+                "values": {}
+              },
+              "nameIdentifier": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              }
+            }
+          },
+          "creators": {
+            "count": 6239,
+            "instances": 6864,
+            "missing": 0,
+            "fieldStatus": "mandatory",
+            "completeness": 1,
+            "subfields": {
+              "affiliation": {
+                "count": 12,
+                "instances": 32,
+                "missing": 6227,
+                "completeness": 0.0019
+              },
+              "nameType": {
+                "count": 1998,
+                "instances": 2070,
+                "missing": 4241,
+                "completeness": 0.3202,
+                "values": {
+                  "Personal": 2068,
+                  "Organizational": 2
+                }
+              },
+              "affiliationIdentifier": {
+                "count": 9,
+                "instances": 21,
+                "missing": 6230,
+                "completeness": 0.0014
+              },
+              "affiliationIdentifierScheme": {
+                "count": 9,
+                "instances": 21,
+                "missing": 6230,
+                "completeness": 0.0014,
+                "values": {
+                  "ROR": 21
+                }
+              },
+              "nameIdentifierScheme": {
+                "count": 3,
+                "instances": 10,
+                "missing": 6236,
+                "completeness": 0.0005,
+                "values": {
+                  "ORCID": 10
+                }
+              },
+              "nameIdentifier": {
+                "count": 3765,
+                "instances": 4295,
+                "missing": 2474,
+                "completeness": 0.6035
+              }
+            }
+          },
+          "fundingReferences": {
+            "count": 0,
+            "instances": 0,
+            "missing": 6239,
+            "fieldStatus": "optional",
+            "completeness": 0,
+            "subfields": {
+              "awardURI": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "awardTitle": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "awardNumber": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "funderIdentifierType": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0,
+                "values": {}
+              },
+              "funderIdentifier": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              },
+              "funderName": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6239,
+                "completeness": 0
+              }
+            }
+          },
+          "sizes": {
+            "count": 0,
+            "instances": 0,
+            "missing": 6239,
+            "fieldStatus": "optional",
+            "completeness": 0
+          },
+          "description": {
+            "count": 70,
+            "instances": 71,
+            "missing": 6169,
+            "fieldStatus": "recommended",
+            "completeness": 0.0112
+          },
+          "publisher": {
+            "count": 6239,
+            "instances": 6239,
+            "missing": 0,
+            "fieldStatus": "mandatory",
+            "completeness": 1
+          }
+        },
+        "categories": {
+          "mandatory": {
+            "completeness": 0.9889
+          },
+          "recommended": {
+            "completeness": 0.1683
+          },
+          "optional": {
+            "completeness": 0.0022
+          }
+        }
+      },
+      "byResourceType": {
+        "resourceTypes": {
+          "Software": {
+            "count": 6,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "resourceType": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 6,
+                    "instances": 6,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Software": 6
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 6,
+                "instances": 10,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 5,
+                    "completeness": 0.1667,
+                    "values": {
+                      "Personal": 1
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 5,
+                    "instances": 9,
+                    "missing": 1,
+                    "completeness": 0.8333
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 6,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 6,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 6,
+                "instances": 6,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 1
+              },
+              "recommended": {
+                "completeness": 0.1667
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          },
+          "Audiovisual": {
+            "count": 23,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 23,
+                "instances": 23,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 23,
+                "instances": 23,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 21,
+                "instances": 21,
+                "missing": 2,
+                "fieldStatus": "mandatory",
+                "completeness": 0.913
+              },
+              "resourceType": {
+                "count": 23,
+                "instances": 23,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 23,
+                    "instances": 23,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Audiovisual": 23
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 23,
+                "instances": 23,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 23,
+                "instances": 28,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 9,
+                    "instances": 9,
+                    "missing": 14,
+                    "completeness": 0.3913,
+                    "values": {
+                      "Personal": 9
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 13,
+                    "instances": 18,
+                    "missing": 10,
+                    "completeness": 0.5652
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 23,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 23,
+                "instances": 23,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.9855
+              },
+              "recommended": {
+                "completeness": 0.1667
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          },
+          "Image": {
+            "count": 24,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 12,
+                "instances": 12,
+                "missing": 12,
+                "fieldStatus": "mandatory",
+                "completeness": 0.5
+              },
+              "resourceType": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 24,
+                    "instances": 24,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Image": 24
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 17,
+                    "instances": 17,
+                    "missing": 7,
+                    "completeness": 0.7083,
+                    "values": {
+                      "Personal": 17
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 4,
+                    "instances": 4,
+                    "missing": 20,
+                    "completeness": 0.1667
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 24,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 24,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 24,
+                "instances": 24,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.9167
+              },
+              "recommended": {
+                "completeness": 0.1667
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          },
+          "Sound": {
+            "count": 1,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "mandatory",
+                "completeness": 0
+              },
+              "resourceType": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Sound": 1
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.8333
+              },
+              "recommended": {
+                "completeness": 0.1667
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          },
+          "Text": {
+            "count": 4690,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 53,
+                "instances": 53,
+                "missing": 4637,
+                "fieldStatus": "optional",
+                "completeness": 0.0113
+              },
+              "identifier": {
+                "count": 4690,
+                "instances": 4690,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 6,
+                "instances": 6,
+                "missing": 4684,
+                "fieldStatus": "optional",
+                "completeness": 0.0013
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 1,
+                "instances": 2,
+                "missing": 4689,
+                "fieldStatus": "optional",
+                "completeness": 0.0002
+              },
+              "titles": {
+                "count": 4690,
+                "instances": 4693,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 4639,
+                "instances": 4639,
+                "missing": 51,
+                "fieldStatus": "mandatory",
+                "completeness": 0.9891
+              },
+              "resourceType": {
+                "count": 4690,
+                "instances": 4690,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 4690,
+                    "instances": 4690,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Text": 4690
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 4690,
+                "instances": 4691,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 1,
+                "instances": 1,
+                "missing": 4689,
+                "fieldStatus": "recommended",
+                "completeness": 0.0002
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 4690,
+                "instances": 4808,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 4689,
+                    "completeness": 0.0002
+                  },
+                  "nameType": {
+                    "count": 1614,
+                    "instances": 1629,
+                    "missing": 3076,
+                    "completeness": 0.3441,
+                    "values": {
+                      "Personal": 1629
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 4689,
+                    "completeness": 0.0002
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 4689,
+                    "completeness": 0.0002,
+                    "values": {
+                      "ROR": 1
+                    }
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 2697,
+                    "instances": 2800,
+                    "missing": 1993,
+                    "completeness": 0.5751
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4690,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4690,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 47,
+                "instances": 48,
+                "missing": 4643,
+                "fieldStatus": "recommended",
+                "completeness": 0.01
+              },
+              "publisher": {
+                "count": 4690,
+                "instances": 4690,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.9982
+              },
+              "recommended": {
+                "completeness": 0.1684
+              },
+              "optional": {
+                "completeness": 0.0016
+              }
+            }
+          },
+          "Dataset": {
+            "count": 160,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 160,
+                "instances": 160,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 2,
+                "instances": 2,
+                "missing": 158,
+                "fieldStatus": "optional",
+                "completeness": 0.0125
+              },
+              "titles": {
+                "count": 160,
+                "instances": 162,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 151,
+                "instances": 151,
+                "missing": 9,
+                "fieldStatus": "mandatory",
+                "completeness": 0.9437
+              },
+              "resourceType": {
+                "count": 160,
+                "instances": 160,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 160,
+                    "instances": 160,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Dataset": 160
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 160,
+                "instances": 161,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 1,
+                "instances": 1,
+                "missing": 159,
+                "fieldStatus": "recommended",
+                "completeness": 0.0063
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 160,
+                "instances": 252,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 25,
+                    "instances": 28,
+                    "missing": 135,
+                    "completeness": 0.1562,
+                    "values": {
+                      "Personal": 28
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 130,
+                    "instances": 219,
+                    "missing": 30,
+                    "completeness": 0.8125
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 160,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 160,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 5,
+                "instances": 5,
+                "missing": 155,
+                "fieldStatus": "recommended",
+                "completeness": 0.0312
+              },
+              "publisher": {
+                "count": 160,
+                "instances": 160,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.9906
+              },
+              "recommended": {
+                "completeness": 0.1729
+              },
+              "optional": {
+                "completeness": 0.0016
+              }
+            }
+          },
+          "Collection": {
+            "count": 8,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "resourceType": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 8,
+                    "instances": 8,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Collection": 8
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 7,
+                    "completeness": 0.125,
+                    "values": {
+                      "Personal": 1
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 8,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 8,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 8,
+                "instances": 8,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 1
+              },
+              "recommended": {
+                "completeness": 0.1667
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          },
+          "Journal": {
+            "count": 1,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "optional",
+                "completeness": 1
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "optional",
+                "completeness": 1
+              },
+              "titles": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "resourceType": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Journal": 1
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 1,
+                "instances": 5,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 1,
+                    "instances": 1,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Organizational": 1
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "recommended",
+                "completeness": 1
+              },
+              "publisher": {
+                "count": 1,
+                "instances": 1,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 1
+              },
+              "recommended": {
+                "completeness": 0.3333
+              },
+              "optional": {
+                "completeness": 0.25
+              }
+            }
+          },
+          "Other": {
+            "count": 1286,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 1,
+                "instances": 1,
+                "missing": 1285,
+                "fieldStatus": "optional",
+                "completeness": 0.0008
+              },
+              "identifier": {
+                "count": 1286,
+                "instances": 1286,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 1286,
+                "instances": 1293,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 945,
+                "instances": 945,
+                "missing": 341,
+                "fieldStatus": "mandatory",
+                "completeness": 0.7348
+              },
+              "resourceType": {
+                "count": 1286,
+                "instances": 1286,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 1286,
+                    "instances": 1286,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Other": 1286
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 1285,
+                "instances": 1285,
+                "missing": 1,
+                "fieldStatus": "recommended",
+                "completeness": 0.9992
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 1286,
+                "instances": 1609,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 300,
+                    "instances": 302,
+                    "missing": 986,
+                    "completeness": 0.2333,
+                    "values": {
+                      "Personal": 301,
+                      "Organizational": 1
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 902,
+                    "instances": 1222,
+                    "missing": 384,
+                    "completeness": 0.7014
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 1286,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 1286,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 4,
+                "instances": 4,
+                "missing": 1282,
+                "fieldStatus": "recommended",
+                "completeness": 0.0031
+              },
+              "publisher": {
+                "count": 1286,
+                "instances": 1286,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 0.9558
+              },
+              "recommended": {
+                "completeness": 0.1671
+              },
+              "optional": {
+                "completeness": 0.0001
+              }
+            }
+          },
+          "JournalArticle": {
+            "count": 36,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 36,
+                "instances": 36,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 16,
+                "instances": 16,
+                "missing": 20,
+                "fieldStatus": "optional",
+                "completeness": 0.4444
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 24,
+                "instances": 24,
+                "missing": 12,
+                "fieldStatus": "optional",
+                "completeness": 0.6667
+              },
+              "titles": {
+                "count": 36,
+                "instances": 54,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 36,
+                "instances": 36,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "resourceType": {
+                "count": 36,
+                "instances": 36,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 36,
+                    "instances": 36,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "JournalArticle": 36
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "relatedItems": {
+                "count": 2,
+                "instances": 2,
+                "missing": 34,
+                "fieldStatus": "optional",
+                "completeness": 0.0556
+              },
+              "formats": {
+                "count": 1,
+                "instances": 1,
+                "missing": 35,
+                "fieldStatus": "optional",
+                "completeness": 0.0278
+              },
+              "subjects": {
+                "count": 8,
+                "instances": 38,
+                "missing": 28,
+                "fieldStatus": "recommended",
+                "completeness": 0.2222
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 22,
+                "instances": 37,
+                "missing": 14,
+                "fieldStatus": "recommended",
+                "completeness": 0.6111,
+                "subfields": {
+                  "relationType": {
+                    "count": 22,
+                    "instances": 37,
+                    "missing": 14,
+                    "completeness": 0.6111,
+                    "values": {
+                      "IsPublishedIn": 37
+                    }
+                  },
+                  "relatedIdentifierType": {
+                    "count": 22,
+                    "instances": 37,
+                    "missing": 14,
+                    "completeness": 0.6111,
+                    "values": {
+                      "DOI": 15,
+                      "URL": 1,
+                      "ISSN": 21
+                    }
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 22,
+                    "instances": 36,
+                    "missing": 14,
+                    "completeness": 0.6111,
+                    "values": {
+                      "Journal": 36
+                    }
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 36,
+                "instances": 119,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 11,
+                    "instances": 31,
+                    "missing": 25,
+                    "completeness": 0.3056
+                  },
+                  "nameType": {
+                    "count": 26,
+                    "instances": 78,
+                    "missing": 10,
+                    "completeness": 0.7222,
+                    "values": {
+                      "Personal": 78
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 8,
+                    "instances": 20,
+                    "missing": 28,
+                    "completeness": 0.2222
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 8,
+                    "instances": 20,
+                    "missing": 28,
+                    "completeness": 0.2222,
+                    "values": {
+                      "ROR": 20
+                    }
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 3,
+                    "instances": 10,
+                    "missing": 33,
+                    "completeness": 0.0833,
+                    "values": {
+                      "ORCID": 10
+                    }
+                  },
+                  "nameIdentifier": {
+                    "count": 10,
+                    "instances": 19,
+                    "missing": 26,
+                    "completeness": 0.2778
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 36,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 36,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 13,
+                "instances": 13,
+                "missing": 23,
+                "fieldStatus": "recommended",
+                "completeness": 0.3611
+              },
+              "publisher": {
+                "count": 36,
+                "instances": 36,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 1
+              },
+              "recommended": {
+                "completeness": 0.1991
+              },
+              "optional": {
+                "completeness": 0.1493
+              }
+            }
+          },
+          "Book": {
+            "count": 4,
+            "fields": {
+              "alternateIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "identifier": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "language": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "geoLocations": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "rights": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "titles": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "publicationYear": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              },
+              "resourceType": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "resourceTypeGeneral": {
+                    "count": 4,
+                    "instances": 4,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Book": 4
+                    }
+                  }
+                }
+              },
+              "date": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "relatedItems": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "formats": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "subjects": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "version": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "relatedIdentifiers": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "relationType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "relatedIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "resourceTypeGeneral": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  }
+                }
+              },
+              "contributors": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "contributorType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  }
+                }
+              },
+              "creators": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1,
+                "subfields": {
+                  "affiliation": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "nameType": {
+                    "count": 4,
+                    "instances": 4,
+                    "missing": 0,
+                    "completeness": 1,
+                    "values": {
+                      "Personal": 4
+                    }
+                  },
+                  "affiliationIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "affiliationIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifierScheme": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "nameIdentifier": {
+                    "count": 4,
+                    "instances": 4,
+                    "missing": 0,
+                    "completeness": 1
+                  }
+                }
+              },
+              "fundingReferences": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0,
+                "subfields": {
+                  "awardURI": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "awardTitle": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "awardNumber": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "funderIdentifierType": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0,
+                    "values": {}
+                  },
+                  "funderIdentifier": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  },
+                  "funderName": {
+                    "count": 0,
+                    "instances": 0,
+                    "missing": 4,
+                    "completeness": 0
+                  }
+                }
+              },
+              "sizes": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "optional",
+                "completeness": 0
+              },
+              "description": {
+                "count": 0,
+                "instances": 0,
+                "missing": 4,
+                "fieldStatus": "recommended",
+                "completeness": 0
+              },
+              "publisher": {
+                "count": 4,
+                "instances": 4,
+                "missing": 0,
+                "fieldStatus": "mandatory",
+                "completeness": 1
+              }
+            },
+            "categories": {
+              "mandatory": {
+                "completeness": 1
+              },
+              "recommended": {
+                "completeness": 0
+              },
+              "optional": {
+                "completeness": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

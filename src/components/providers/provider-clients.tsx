@@ -20,8 +20,8 @@ interface ProviderClientsProps {
   fieldStatsView: ViewMode;
 }
 
-export function ProviderClients({ 
-  clients, 
+export function ProviderClients({
+  clients,
   onClientSelect,
   selectedClient,
   fieldStatsView,
@@ -32,7 +32,7 @@ export function ProviderClients({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-col items-start">
         <Text variant="h2" className="font-semibold">Repositories</Text>
       </div>
 
@@ -68,10 +68,10 @@ export function ProviderClients({
             </div>
 
             <EntityMetrics entity={selectedClient} />
-            <FieldStats 
-              stats={selectedClient.stats} 
+            <FieldStats
+              stats={selectedClient.stats}
               viewMode={fieldStatsView}
-              onToggleView={() => {}} 
+              onToggleView={() => { }}
             />
           </div>
         )}
