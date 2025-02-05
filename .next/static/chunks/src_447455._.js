@@ -416,8 +416,11 @@ const getProviderDetails = async (providerId)=>{
         const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$api$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["fetchProviderData"])(providerId);
         if (response.data) {
             // If we found the uploaded file, return its data
-            const data = await response.json();
-            return data;
+            // const data = await response.json();
+            // return data;
+            const temp = response.data.data;
+            console.log("DATA", temp);
+            return temp;
         }
         // If no local file is found, try the API
         const apiResponse = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$api$2f$client$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["apiClient"].get(`${API_BASE}/providers/${providerId}`);

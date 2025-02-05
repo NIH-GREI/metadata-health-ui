@@ -1,10 +1,4 @@
 {
-  "/upload/page": "app/upload/page.js",
-  "/api/upload/route": "app/api/upload/route.js",
-  "/about/page": "app/about/page.js",
-  "/page": "app/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/providers/[id]/page": "app/providers/[id]/page.js",
-  "/api/providers/[providerId]/route": "app/api/providers/[providerId]/route.js",
-  "/table/page": "app/table/page.js"
+  "/api/providers/[providerId]/route": "app/api/providers/[providerId]/route.js"
 }

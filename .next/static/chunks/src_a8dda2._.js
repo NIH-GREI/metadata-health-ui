@@ -2357,7 +2357,7 @@ const DetailedFieldStats = ({ stats, figshare })=>{
                                 children: "DataCite record"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                lineNumber: 116,
+                                lineNumber: 117,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$stack$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Stack"], {
@@ -2365,724 +2365,742 @@ const DetailedFieldStats = ({ stats, figshare })=>{
                                 children: fields.map(([fieldName, fieldData])=>{
                                     const completeness = fieldData.completeness;
                                     const hasSubfields = fieldData.subfields && Object.keys(fieldData.subfields).length > 0;
-                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "overflow-hidden",
-                                        role: "region",
-                                        "aria-labelledby": `field-${fieldName}`,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
-                                            className: "p-6",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                ref: containerRef,
-                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-4", !isNarrow && "grid grid-cols-[minmax(250px,3fr),1fr,1fr,1fr,1fr,1.2fr] gap-4 sm:gap-8"),
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-center justify-between flex-col items-start",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-4",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex items-center gap-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "h3",
-                                                                            className: "truncate",
-                                                                            title: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName),
-                                                                            id: `field-${fieldName}`,
-                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 135,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
-                                                                                        asChild: true,
-                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                                            className: "inline-flex flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                            "aria-label": `Information about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)}`,
-                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
-                                                                                                className: "h-4 w-4 text-gray-700"
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: fieldName ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "overflow-hidden",
+                                            role: "region",
+                                            "aria-labelledby": `field-${fieldName}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                                className: "p-6",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    ref: containerRef,
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-4", !isNarrow && "grid grid-cols-[minmax(250px,3fr),1fr,1fr,1fr,1fr,1.2fr] gap-4 sm:gap-8"),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center justify-between flex-col items-start",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center gap-4",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-2",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "h3",
+                                                                                className: "truncate",
+                                                                                title: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName),
+                                                                                id: `field-${fieldName}`,
+                                                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 138,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
+                                                                                            asChild: true,
+                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                                                className: "inline-flex flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                "aria-label": `Information about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)}`,
+                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                                                                    className: "h-4 w-4 text-gray-700"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 153,
+                                                                                                    columnNumber: 41
+                                                                                                }, this)
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 150,
-                                                                                                columnNumber: 37
+                                                                                                lineNumber: 149,
+                                                                                                columnNumber: 39
                                                                                             }, this)
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                            lineNumber: 146,
-                                                                                            columnNumber: 35
+                                                                                            lineNumber: 148,
+                                                                                            columnNumber: 37
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
+                                                                                            className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
+                                                                                            children: [
+                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDescription"])(fieldName),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldUrl"])(fieldName),
+                                                                                                    target: "_blank",
+                                                                                                    rel: "noopener noreferrer",
+                                                                                                    className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                    "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)} (opens in new tab)`,
+                                                                                                    children: "Learn more"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 158,
+                                                                                                    columnNumber: 39
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 156,
+                                                                                            columnNumber: 37
                                                                                         }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 147,
+                                                                                    columnNumber: 35
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 146,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 137,
+                                                                        columnNumber: 31
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 136,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                isNarrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center gap-2",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-2",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700",
+                                                                                children: "Completeness"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 175,
+                                                                                columnNumber: 35
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                        value: completeness * 100,
+                                                                                        className: "h-2 w-24 bg-primary/20",
+                                                                                        indicatorClassName: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCategoryColor"])(fieldData.fieldStatus, completeness)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 145,
-                                                                                        columnNumber: 33
+                                                                                        lineNumber: 177,
+                                                                                        columnNumber: 37
                                                                                     }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
-                                                                                        className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
-                                                                                        children: [
-                                                                                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDescription"])(fieldName),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                                                href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldUrl"])(fieldName),
-                                                                                                target: "_blank",
-                                                                                                rel: "noopener noreferrer",
-                                                                                                className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                                "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)} (opens in new tab)`,
-                                                                                                children: "Learn more"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 155,
-                                                                                                columnNumber: 35
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                        variant: "body",
+                                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-medium", (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTextColor"])(fieldData.fieldStatus, completeness)),
+                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness)
+                                                                                    }, void 0, false, {
                                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 153,
-                                                                                        columnNumber: 33
+                                                                                        lineNumber: 182,
+                                                                                        columnNumber: 37
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 144,
-                                                                                columnNumber: 31
+                                                                                lineNumber: 176,
+                                                                                columnNumber: 35
                                                                             }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 143,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 174,
+                                                                        columnNumber: 33
+                                                                    }, this)
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 134,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 133,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            isNarrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-2",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700",
-                                                                            children: "Completeness"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 172,
-                                                                            columnNumber: 31
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-2",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                    value: completeness * 100,
-                                                                                    className: "h-2 w-24 bg-primary/20",
-                                                                                    indicatorClassName: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCategoryColor"])(fieldData.fieldStatus, completeness)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 174,
-                                                                                    columnNumber: 33
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                    variant: "body",
-                                                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-medium", (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTextColor"])(fieldData.fieldStatus, completeness)),
-                                                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 179,
-                                                                                    columnNumber: 33
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 173,
-                                                                            columnNumber: 31
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 171,
-                                                                    columnNumber: 29
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 170,
-                                                                columnNumber: 27
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 132,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "border-t-2 border-gray-300 my-4"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 191,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("grid gap-4", isNarrow ? "col-span-2" : "contents"),
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Category"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 201,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium capitalize",
-                                                                            title: getCategoryTitle(fieldData.fieldStatus),
-                                                                            "aria-label": `Field category: ${getCategoryTitle(fieldData.fieldStatus)}`,
-                                                                            children: getCategoryTitle(fieldData.fieldStatus)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 202,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 200,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Present"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 213,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.count.toLocaleString(),
-                                                                            "aria-label": `${fieldData.count.toLocaleString()} records present`,
-                                                                            children: fieldData.count.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 214,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 212,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Missing"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 226,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.missing.toLocaleString(),
-                                                                            "aria-label": `${fieldData.missing.toLocaleString()} missing instances`,
-                                                                            children: fieldData.missing.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 227,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 224,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Instances"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 238,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.instances.toLocaleString(),
-                                                                            "aria-label": `${fieldData.instances.toLocaleString()} instances`,
-                                                                            children: fieldData.instances.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 239,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 237,
-                                                                    columnNumber: 27
+                                                                    lineNumber: 173,
+                                                                    columnNumber: 31
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                            lineNumber: 199,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 194,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    hasSubfields && fieldData.subfields && Object.values(fieldData.subfields)?.some((subfield)=>subfield.count > 0) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("space-y-2", isNarrow ? "col-span-full" : "col-span-6"),
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                onClick: ()=>toggleSubfield(fieldName, 'all'),
-                                                                className: "flex items-center justify-between p-2 bg-white rounded-md border border-gray-300 hover:bg-gray-50 transition-colors w-auto",
-                                                                "aria-expanded": isSubfieldExpanded(fieldName, 'all'),
-                                                                "aria-controls": `subfields-${fieldName}`,
+                                                            lineNumber: 135,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "border-t-2 border-gray-300 my-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 194,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("grid gap-4", isNarrow ? "col-span-2" : "contents"),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                        variant: "body",
-                                                                        className: "font-medium",
-                                                                        children: "Subfields"
-                                                                    }, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Category"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 204,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium capitalize",
+                                                                                title: getCategoryTitle(fieldData.fieldStatus),
+                                                                                "aria-label": `Field category: ${getCategoryTitle(fieldData.fieldStatus)}`,
+                                                                                children: getCategoryTitle(fieldData.fieldStatus) ? getCategoryTitle(fieldData.fieldStatus) : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 205,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 263,
-                                                                        columnNumber: 29
+                                                                        lineNumber: 203,
+                                                                        columnNumber: 31
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform ml-2", isSubfieldExpanded(fieldName, 'all') ? "rotate-180" : "")
-                                                                    }, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Present"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 216,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData.count.toLocaleString(),
+                                                                                "aria-label": `${fieldData.count.toLocaleString()} records present`,
+                                                                                children: fieldData.count.toLocaleString() ? fieldData.count.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 217,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 264,
-                                                                        columnNumber: 29
+                                                                        lineNumber: 215,
+                                                                        columnNumber: 31
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Missing"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 229,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData.missing.toLocaleString(),
+                                                                                "aria-label": `${fieldData.missing.toLocaleString()} missing instances`,
+                                                                                children: fieldData.missing.toLocaleString() ? fieldData.missing.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 230,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 227,
+                                                                        columnNumber: 31
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Instances"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 241,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData?.instances?.toLocaleString(),
+                                                                                "aria-label": `${fieldData?.instances?.toLocaleString()} instances`,
+                                                                                children: fieldData?.instances?.toLocaleString() ? fieldData?.instances?.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 242,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 240,
+                                                                        columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 257,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            isSubfieldExpanded(fieldName, 'all') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                id: `subfields-${fieldName}`,
-                                                                className: "space-y-4 mt-2",
-                                                                children: Object.entries(fieldData.subfields).filter(isValidSubfield).sort(([a], [b])=>a.localeCompare(b)).map(([subfieldName, subfieldData])=>{
-                                                                    const isExpanded = isSubfieldExpanded(fieldName, subfieldName);
-                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-lg border border-gray-200 overflow-hidden", isNarrow ? "" : "ml-6"),
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                                onClick: ()=>toggleSubfield(fieldName, subfieldName),
-                                                                                className: "w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors",
-                                                                                "aria-expanded": isExpanded,
-                                                                                "aria-controls": `subfield-content-${fieldName}-${subfieldName}`,
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex items-center gap-2",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                variant: "body",
-                                                                                                className: "font-medium",
-                                                                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 297,
-                                                                                                columnNumber: 43
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
-                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
-                                                                                                    children: [
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
-                                                                                                            asChild: true,
-                                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                                className: "inline-flex p-1 hover:bg-gray-200 rounded-full transition-colors",
-                                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
-                                                                                                                    className: "h-4 w-4 text-gray-700"
+                                                                lineNumber: 202,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 197,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        hasSubfields && fieldData.subfields && Object.values(fieldData.subfields)?.some((subfield)=>subfield.count > 0) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("space-y-2", isNarrow ? "col-span-full" : "col-span-6"),
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    onClick: ()=>toggleSubfield(fieldName, 'all'),
+                                                                    className: "flex items-center justify-between p-2 bg-white rounded-md border border-gray-300 hover:bg-gray-50 transition-colors w-auto",
+                                                                    "aria-expanded": isSubfieldExpanded(fieldName, 'all'),
+                                                                    "aria-controls": `subfields-${fieldName}`,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                            variant: "body",
+                                                                            className: "font-medium",
+                                                                            children: "Subfields"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 266,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform ml-2", isSubfieldExpanded(fieldName, 'all') ? "rotate-180" : "")
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 267,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 260,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                isSubfieldExpanded(fieldName, 'all') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    id: `subfields-${fieldName}`,
+                                                                    className: "space-y-4 mt-2",
+                                                                    children: Object.entries(fieldData.subfields).filter(isValidSubfield).sort(([a], [b])=>a.localeCompare(b)).map(([subfieldName, subfieldData])=>{
+                                                                        const isExpanded = isSubfieldExpanded(fieldName, subfieldName);
+                                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-lg border border-gray-200 overflow-hidden", isNarrow ? "" : "ml-6"),
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                                    onClick: ()=>toggleSubfield(fieldName, subfieldName),
+                                                                                    className: "w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors",
+                                                                                    "aria-expanded": isExpanded,
+                                                                                    "aria-controls": `subfield-content-${fieldName}-${subfieldName}`,
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "flex items-center gap-2",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                    variant: "body",
+                                                                                                    className: "font-medium",
+                                                                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 300,
+                                                                                                    columnNumber: 47
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
+                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
+                                                                                                        children: [
+                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
+                                                                                                                asChild: true,
+                                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                                                    className: "inline-flex p-1 hover:bg-gray-200 rounded-full transition-colors",
+                                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                                                                                        className: "h-4 w-4 text-gray-700"
+                                                                                                                    }, void 0, false, {
+                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                        lineNumber: 308,
+                                                                                                                        columnNumber: 55
+                                                                                                                    }, this)
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                    lineNumber: 305,
-                                                                                                                    columnNumber: 51
+                                                                                                                    lineNumber: 307,
+                                                                                                                    columnNumber: 53
                                                                                                                 }, this)
                                                                                                             }, void 0, false, {
                                                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 304,
-                                                                                                                columnNumber: 49
+                                                                                                                lineNumber: 306,
+                                                                                                                columnNumber: 51
+                                                                                                            }, this),
+                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
+                                                                                                                className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
+                                                                                                                children: [
+                                                                                                                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDescription"])(fieldName, subfieldName),
+                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                                                        href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldUrl"])(fieldName, subfieldName),
+                                                                                                                        target: "_blank",
+                                                                                                                        rel: "noopener noreferrer",
+                                                                                                                        className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                                        "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)} (opens in new tab)`,
+                                                                                                                        children: "Learn more"
+                                                                                                                    }, void 0, false, {
+                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                        lineNumber: 313,
+                                                                                                                        columnNumber: 53
+                                                                                                                    }, this)
+                                                                                                                ]
+                                                                                                            }, void 0, true, {
+                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                lineNumber: 311,
+                                                                                                                columnNumber: 51
                                                                                                             }, this)
+                                                                                                        ]
+                                                                                                    }, void 0, true, {
+                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                        lineNumber: 305,
+                                                                                                        columnNumber: 49
+                                                                                                    }, this)
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 304,
+                                                                                                    columnNumber: 47
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 299,
+                                                                                            columnNumber: 45
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "flex items-center gap-4",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "flex items-center gap-2",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                                            value: subfieldData.completeness * 100,
+                                                                                                            className: "h-2 w-24 bg-[#EBF0F5]",
+                                                                                                            indicatorClassName: "bg-gray-900"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                            lineNumber: 303,
-                                                                                                            columnNumber: 47
+                                                                                                            lineNumber: 328,
+                                                                                                            columnNumber: 49
                                                                                                         }, this),
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
-                                                                                                            className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
-                                                                                                            children: [
-                                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDescription"])(fieldName, subfieldName),
-                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                                                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldUrl"])(fieldName, subfieldName),
-                                                                                                                    target: "_blank",
-                                                                                                                    rel: "noopener noreferrer",
-                                                                                                                    className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                                                    "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)} (opens in new tab)`,
-                                                                                                                    children: "Learn more"
-                                                                                                                }, void 0, false, {
-                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                    lineNumber: 310,
-                                                                                                                    columnNumber: 49
-                                                                                                                }, this)
-                                                                                                            ]
-                                                                                                        }, void 0, true, {
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(subfieldData.completeness)
+                                                                                                        }, void 0, false, {
                                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                            lineNumber: 308,
-                                                                                                            columnNumber: 47
+                                                                                                            lineNumber: 333,
+                                                                                                            columnNumber: 49
                                                                                                         }, this)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                    lineNumber: 302,
-                                                                                                    columnNumber: 45
+                                                                                                    lineNumber: 327,
+                                                                                                    columnNumber: 47
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform", isExpanded ? "rotate-180" : "")
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 340,
+                                                                                                    columnNumber: 47
                                                                                                 }, this)
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 301,
-                                                                                                columnNumber: 43
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 296,
-                                                                                        columnNumber: 41
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex items-center gap-4",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "flex items-center gap-2",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                                        value: subfieldData.completeness * 100,
-                                                                                                        className: "h-2 w-24 bg-[#EBF0F5]",
-                                                                                                        indicatorClassName: "bg-gray-900"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 325,
-                                                                                                        columnNumber: 45
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(subfieldData.completeness)
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 330,
-                                                                                                        columnNumber: 45
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 324,
-                                                                                                columnNumber: 43
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform", isExpanded ? "rotate-180" : "")
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 337,
-                                                                                                columnNumber: 43
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 323,
-                                                                                        columnNumber: 41
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 290,
-                                                                                columnNumber: 39
-                                                                            }, this),
-                                                                            isExpanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                id: `subfield-content-${fieldName}-${subfieldName}`,
-                                                                                className: "px-4 py-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "grid grid-cols-3 gap-4",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: "Present"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 353,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.count.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 354,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 352,
-                                                                                                columnNumber: 45
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: [
-                                                                                                            "Missing-",
-                                                                                                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
-                                                                                                        ]
-                                                                                                    }, void 0, true, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 359,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.missing.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 360,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 358,
-                                                                                                columnNumber: 45
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: "Instances"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 365,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.instances.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 366,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 364,
-                                                                                                columnNumber: 45
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 351,
-                                                                                        columnNumber: 43
-                                                                                    }, this),
-                                                                                    subfieldData.values && Object.keys(subfieldData.values).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "border-t border-gray-200 my-4"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 373,
-                                                                                                columnNumber: 47
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-2",
-                                                                                                children: Object.entries(subfieldData.values).filter((entry)=>entry[1] > 0).sort((a, b)=>b[1] - a[1]).map(([valueKey, valueCount])=>{
-                                                                                                    const percentage = valueCount / subfieldData.instances * 100;
-                                                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                        className: "space-y-1",
-                                                                                                        children: [
-                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                className: "flex justify-between items-center",
-                                                                                                                children: [
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                        variant: "body",
-                                                                                                                        className: "font-medium",
-                                                                                                                        children: valueKey
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 383,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this),
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                        variant: "body",
-                                                                                                                        className: "text-gray-600",
-                                                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(percentage / 100)
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 386,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this)
-                                                                                                                ]
-                                                                                                            }, void 0, true, {
-                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 382,
-                                                                                                                columnNumber: 57
-                                                                                                            }, this),
-                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                className: "relative",
-                                                                                                                children: [
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                                                        value: percentage,
-                                                                                                                        className: "h-2 bg-[#EBF0F5]",
-                                                                                                                        indicatorClassName: "bg-gray-900"
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 391,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this),
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                        className: "flex justify-between items-center mt-1",
-                                                                                                                        children: [
-                                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                                variant: "small",
-                                                                                                                                className: "text-gray-600",
-                                                                                                                                children: "log scale"
-                                                                                                                            }, void 0, false, {
-                                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                                lineNumber: 397,
-                                                                                                                                columnNumber: 61
-                                                                                                                            }, this),
-                                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                                variant: "small",
-                                                                                                                                className: "text-gray-600 tabular-nums",
-                                                                                                                                children: [
-                                                                                                                                    valueCount.toLocaleString(),
-                                                                                                                                    " / ",
-                                                                                                                                    subfieldData.instances.toLocaleString()
-                                                                                                                                ]
-                                                                                                                            }, void 0, true, {
-                                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                                lineNumber: 400,
-                                                                                                                                columnNumber: 61
-                                                                                                                            }, this)
-                                                                                                                        ]
-                                                                                                                    }, void 0, true, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 396,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this)
-                                                                                                                ]
-                                                                                                            }, void 0, true, {
-                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 390,
-                                                                                                                columnNumber: 57
-                                                                                                            }, this)
-                                                                                                        ]
-                                                                                                    }, valueKey, true, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 381,
-                                                                                                        columnNumber: 55
-                                                                                                    }, this);
-                                                                                                })
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 374,
-                                                                                                columnNumber: 47
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 347,
-                                                                                columnNumber: 41
-                                                                            }, this)
-                                                                        ]
-                                                                    }, subfieldName, true, {
-                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 283,
-                                                                        columnNumber: 37
-                                                                    }, this);
-                                                                })
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 273,
-                                                                columnNumber: 29
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 253,
-                                                        columnNumber: 25
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        style: {
-                                                            height: "46px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 420,
-                                                        columnNumber: 25
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 326,
+                                                                                            columnNumber: 45
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 293,
+                                                                                    columnNumber: 43
+                                                                                }, this),
+                                                                                isExpanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    id: `subfield-content-${fieldName}-${subfieldName}`,
+                                                                                    className: "px-4 py-3",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "grid grid-cols-3 gap-4",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: "Present"
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 356,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.count.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 357,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 355,
+                                                                                                    columnNumber: 49
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: [
+                                                                                                                "Missing-",
+                                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
+                                                                                                            ]
+                                                                                                        }, void 0, true, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 362,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.missing.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 363,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 361,
+                                                                                                    columnNumber: 49
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: "Instances"
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 368,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.instances.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 369,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 367,
+                                                                                                    columnNumber: 49
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 354,
+                                                                                            columnNumber: 47
+                                                                                        }, this),
+                                                                                        subfieldData.values && Object.keys(subfieldData.values).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "border-t border-gray-200 my-4"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 376,
+                                                                                                    columnNumber: 51
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-2",
+                                                                                                    children: Object.entries(subfieldData.values).filter((entry)=>entry[1] > 0).sort((a, b)=>b[1] - a[1]).map(([valueKey, valueCount])=>{
+                                                                                                        const percentage = valueCount / subfieldData.instances * 100;
+                                                                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                            className: "space-y-1",
+                                                                                                            children: [
+                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                    className: "flex justify-between items-center",
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                            variant: "body",
+                                                                                                                            className: "font-medium",
+                                                                                                                            children: valueKey
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 386,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this),
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                            variant: "body",
+                                                                                                                            className: "text-gray-600",
+                                                                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(percentage / 100)
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 389,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this)
+                                                                                                                    ]
+                                                                                                                }, void 0, true, {
+                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                    lineNumber: 385,
+                                                                                                                    columnNumber: 61
+                                                                                                                }, this),
+                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                    className: "relative",
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                                                            value: percentage,
+                                                                                                                            className: "h-2 bg-[#EBF0F5]",
+                                                                                                                            indicatorClassName: "bg-gray-900"
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 394,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this),
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                            className: "flex justify-between items-center mt-1",
+                                                                                                                            children: [
+                                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                                    variant: "small",
+                                                                                                                                    className: "text-gray-600",
+                                                                                                                                    children: "log scale"
+                                                                                                                                }, void 0, false, {
+                                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                                    lineNumber: 400,
+                                                                                                                                    columnNumber: 65
+                                                                                                                                }, this),
+                                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                                    variant: "small",
+                                                                                                                                    className: "text-gray-600 tabular-nums",
+                                                                                                                                    children: [
+                                                                                                                                        valueCount.toLocaleString(),
+                                                                                                                                        " / ",
+                                                                                                                                        subfieldData.instances.toLocaleString()
+                                                                                                                                    ]
+                                                                                                                                }, void 0, true, {
+                                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                                    lineNumber: 403,
+                                                                                                                                    columnNumber: 65
+                                                                                                                                }, this)
+                                                                                                                            ]
+                                                                                                                        }, void 0, true, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 399,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this)
+                                                                                                                    ]
+                                                                                                                }, void 0, true, {
+                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                    lineNumber: 393,
+                                                                                                                    columnNumber: 61
+                                                                                                                }, this)
+                                                                                                            ]
+                                                                                                        }, valueKey, true, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 384,
+                                                                                                            columnNumber: 59
+                                                                                                        }, this);
+                                                                                                    })
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 377,
+                                                                                                    columnNumber: 51
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 350,
+                                                                                    columnNumber: 45
+                                                                                }, this)
+                                                                            ]
+                                                                        }, subfieldName, true, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 286,
+                                                                            columnNumber: 41
+                                                                        }, this);
+                                                                    })
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 276,
+                                                                    columnNumber: 33
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 256,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            style: {
+                                                                height: "46px"
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 423,
+                                                            columnNumber: 29
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                    lineNumber: 127,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                lineNumber: 124,
-                                                columnNumber: 21
+                                                lineNumber: 126,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, fieldName, false, {
+                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                            lineNumber: 125,
+                                            columnNumber: 21
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                children: "MISSING"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                lineNumber: 432,
+                                                columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                            lineNumber: 123,
-                                            columnNumber: 19
+                                            lineNumber: 431,
+                                            columnNumber: 21
                                         }, this)
                                     }, fieldName, false, {
                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                        lineNumber: 122,
+                                        lineNumber: 123,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                lineNumber: 117,
+                                lineNumber: 118,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -3103,7 +3121,7 @@ const DetailedFieldStats = ({ stats, figshare })=>{
                                 children: "Figshare record"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                lineNumber: 432,
+                                lineNumber: 443,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$stack$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Stack"], {
@@ -3111,730 +3129,748 @@ const DetailedFieldStats = ({ stats, figshare })=>{
                                 children: figshareFields.map(([fieldName, fieldData])=>{
                                     const completeness = fieldData.completeness;
                                     const hasSubfields = fieldData.subfields && Object.keys(fieldData.subfields).length > 0;
-                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "overflow-hidden",
-                                        role: "region",
-                                        "aria-labelledby": `field-${fieldName}`,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
-                                            className: "p-6",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                ref: containerRef,
-                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-4", !isNarrow && "grid grid-cols-[minmax(250px,3fr),1fr,1fr,1fr,1fr,1.2fr] gap-4 sm:gap-8"),
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "flex items-center justify-between flex-col items-start",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-4",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "flex items-center gap-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "h3",
-                                                                            className: "truncate",
-                                                                            title: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName),
-                                                                            id: `field-${fieldName}`,
-                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 451,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
-                                                                                        asChild: true,
-                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                                            className: "inline-flex flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                            "aria-label": `Information about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)}`,
-                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
-                                                                                                className: "h-4 w-4 text-gray-700"
+                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: fieldName ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "overflow-hidden",
+                                            role: "region",
+                                            "aria-labelledby": `field-${fieldName}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                                className: "p-6",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    ref: containerRef,
+                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-4", !isNarrow && "grid grid-cols-[minmax(250px,3fr),1fr,1fr,1fr,1fr,1.2fr] gap-4 sm:gap-8"),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "flex items-center justify-between flex-col items-start",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center gap-4",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-2",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "h3",
+                                                                                className: "truncate",
+                                                                                title: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName),
+                                                                                id: `field-${fieldName}`,
+                                                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 464,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
+                                                                                            asChild: true,
+                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                                                className: "inline-flex flex-shrink-0 p-1 hover:bg-gray-100 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                "aria-label": `Information about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)}`,
+                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                                                                    className: "h-4 w-4 text-gray-700"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 479,
+                                                                                                    columnNumber: 41
+                                                                                                }, this)
                                                                                             }, void 0, false, {
                                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 466,
-                                                                                                columnNumber: 37
+                                                                                                lineNumber: 475,
+                                                                                                columnNumber: 39
                                                                                             }, this)
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                            lineNumber: 462,
-                                                                                            columnNumber: 35
+                                                                                            lineNumber: 474,
+                                                                                            columnNumber: 37
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
+                                                                                            className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
+                                                                                            children: [
+                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDescription"])(fieldName),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldUrl"])(fieldName),
+                                                                                                    target: "_blank",
+                                                                                                    rel: "noopener noreferrer",
+                                                                                                    className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                    "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)} (opens in new tab)`,
+                                                                                                    children: "Learn more"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 484,
+                                                                                                    columnNumber: 39
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 482,
+                                                                                            columnNumber: 37
                                                                                         }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 473,
+                                                                                    columnNumber: 35
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 472,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 463,
+                                                                        columnNumber: 31
+                                                                    }, this)
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 462,
+                                                                    columnNumber: 29
+                                                                }, this),
+                                                                isNarrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "flex items-center gap-2",
+                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-2",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700",
+                                                                                children: "Completeness"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 501,
+                                                                                columnNumber: 35
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-2",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                        value: completeness * 100,
+                                                                                        className: "h-2 w-24 bg-primary/20",
+                                                                                        indicatorClassName: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCategoryColor"])(fieldData.fieldStatus, completeness)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 461,
-                                                                                        columnNumber: 33
+                                                                                        lineNumber: 503,
+                                                                                        columnNumber: 37
                                                                                     }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
-                                                                                        className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
-                                                                                        children: [
-                                                                                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDescription"])(fieldName),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                                                href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldUrl"])(fieldName),
-                                                                                                target: "_blank",
-                                                                                                rel: "noopener noreferrer",
-                                                                                                className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                                "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(fieldName)} (opens in new tab)`,
-                                                                                                children: "Learn more"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 471,
-                                                                                                columnNumber: 35
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                        variant: "body",
+                                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-medium", (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTextColor"])(fieldData.fieldStatus, completeness)),
+                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness)
+                                                                                    }, void 0, false, {
                                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 469,
-                                                                                        columnNumber: 33
+                                                                                        lineNumber: 508,
+                                                                                        columnNumber: 37
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 460,
-                                                                                columnNumber: 31
+                                                                                lineNumber: 502,
+                                                                                columnNumber: 35
                                                                             }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 459,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 500,
+                                                                        columnNumber: 33
+                                                                    }, this)
+                                                                }, void 0, false, {
                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 450,
-                                                                    columnNumber: 27
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 449,
-                                                                columnNumber: 25
-                                                            }, this),
-                                                            isNarrow && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: "flex items-center gap-2",
-                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-2",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700",
-                                                                            children: "Completeness"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 488,
-                                                                            columnNumber: 31
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center gap-2",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                    value: completeness * 100,
-                                                                                    className: "h-2 w-24 bg-primary/20",
-                                                                                    indicatorClassName: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCategoryColor"])(fieldData.fieldStatus, completeness)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 490,
-                                                                                    columnNumber: 33
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                    variant: "body",
-                                                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-medium", (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTextColor"])(fieldData.fieldStatus, completeness)),
-                                                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 495,
-                                                                                    columnNumber: 33
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 489,
-                                                                            columnNumber: 31
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 487,
-                                                                    columnNumber: 29
-                                                                }, this)
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 486,
-                                                                columnNumber: 27
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 448,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "border-t-2 border-gray-300 my-4"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 507,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("grid gap-4", isNarrow ? "col-span-2" : "contents"),
-                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Category"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 517,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium capitalize",
-                                                                            title: getCategoryTitle(fieldData.fieldStatus),
-                                                                            "aria-label": `Field category: ${getCategoryTitle(fieldData.fieldStatus)}`,
-                                                                            children: getCategoryTitle(fieldData.fieldStatus)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 518,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 516,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Present"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 529,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.count.toLocaleString(),
-                                                                            "aria-label": `${fieldData.count.toLocaleString()} records present`,
-                                                                            children: fieldData.count.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 530,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 528,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Missing"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 542,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.missing.toLocaleString(),
-                                                                            "aria-label": `${fieldData.missing.toLocaleString()} missing instances`,
-                                                                            children: fieldData.missing.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 543,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 540,
-                                                                    columnNumber: 27
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1 stats-item",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "small",
-                                                                            className: "text-gray-700 stat-title",
-                                                                            children: "Instances"
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 554,
-                                                                            columnNumber: 29
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                            variant: "body",
-                                                                            className: "font-medium tabular-nums",
-                                                                            title: fieldData.instances.toLocaleString(),
-                                                                            "aria-label": `${fieldData.instances.toLocaleString()} instances`,
-                                                                            children: fieldData.instances.toLocaleString()
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 555,
-                                                                            columnNumber: 29
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                    lineNumber: 553,
-                                                                    columnNumber: 27
+                                                                    lineNumber: 499,
+                                                                    columnNumber: 31
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                            lineNumber: 515,
-                                                            columnNumber: 25
-                                                        }, this)
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 510,
-                                                        columnNumber: 23
-                                                    }, this),
-                                                    hasSubfields && fieldData.subfields && Object.values(fieldData.subfields)?.some((subfield)=>subfield.count > 0) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("space-y-2", isNarrow ? "col-span-full" : "col-span-6"),
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                onClick: ()=>toggleSubfield(fieldName, 'all'),
-                                                                className: "flex items-center justify-between p-2 bg-white rounded-md border border-gray-300 hover:bg-gray-50 transition-colors w-auto",
-                                                                "aria-expanded": isSubfieldExpanded(fieldName, 'all'),
-                                                                "aria-controls": `subfields-${fieldName}`,
+                                                            lineNumber: 461,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "border-t-2 border-gray-300 my-4"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 520,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("grid gap-4", isNarrow ? "col-span-2" : "contents"),
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                        variant: "body",
-                                                                        className: "font-medium",
-                                                                        children: "Subfields"
-                                                                    }, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Category"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 530,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium capitalize",
+                                                                                title: getCategoryTitle(fieldData.fieldStatus),
+                                                                                "aria-label": `Field category: ${getCategoryTitle(fieldData.fieldStatus)}`,
+                                                                                children: getCategoryTitle(fieldData.fieldStatus) ? getCategoryTitle(fieldData.fieldStatus) : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 531,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 579,
-                                                                        columnNumber: 29
+                                                                        lineNumber: 529,
+                                                                        columnNumber: 31
                                                                     }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform ml-2", isSubfieldExpanded(fieldName, 'all') ? "rotate-180" : "")
-                                                                    }, void 0, false, {
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Present"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 542,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData.count.toLocaleString(),
+                                                                                "aria-label": `${fieldData.count.toLocaleString()} records present`,
+                                                                                children: fieldData.count.toLocaleString() ? fieldData.count.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 543,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 580,
-                                                                        columnNumber: 29
+                                                                        lineNumber: 541,
+                                                                        columnNumber: 31
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Missing"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 555,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData.missing.toLocaleString(),
+                                                                                "aria-label": `${fieldData.missing.toLocaleString()} missing instances`,
+                                                                                children: fieldData.missing.toLocaleString() ? fieldData.missing.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 556,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 553,
+                                                                        columnNumber: 31
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "space-y-1 stats-item",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "small",
+                                                                                className: "text-gray-700 stat-title",
+                                                                                children: "Instances"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 567,
+                                                                                columnNumber: 33
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                variant: "body",
+                                                                                className: "font-medium tabular-nums",
+                                                                                title: fieldData?.instances?.toLocaleString(),
+                                                                                "aria-label": `${fieldData?.instances?.toLocaleString()} instances`,
+                                                                                children: fieldData?.instances?.toLocaleString() ? fieldData?.instances?.toLocaleString() : "0"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                lineNumber: 568,
+                                                                                columnNumber: 33
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                        lineNumber: 566,
+                                                                        columnNumber: 31
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 573,
-                                                                columnNumber: 27
-                                                            }, this),
-                                                            isSubfieldExpanded(fieldName, 'all') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                id: `subfields-${fieldName}`,
-                                                                className: "space-y-4 mt-2",
-                                                                children: Object.entries(fieldData.subfields).filter(isValidSubfield).sort(([a], [b])=>a.localeCompare(b)).map(([subfieldName, subfieldData])=>{
-                                                                    const isExpanded = isSubfieldExpanded(fieldName, subfieldName);
-                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-lg border border-gray-200 overflow-hidden", isNarrow ? "" : "ml-6"),
-                                                                        children: [
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                                                onClick: ()=>toggleSubfield(fieldName, subfieldName),
-                                                                                className: "w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors",
-                                                                                "aria-expanded": isExpanded,
-                                                                                "aria-controls": `subfield-content-${fieldName}-${subfieldName}`,
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex items-center gap-2",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                variant: "body",
-                                                                                                className: "font-medium",
-                                                                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 613,
-                                                                                                columnNumber: 43
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
-                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
-                                                                                                    children: [
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
-                                                                                                            asChild: true,
-                                                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                                                className: "inline-flex p-1 hover:bg-gray-200 rounded-full transition-colors",
-                                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
-                                                                                                                    className: "h-4 w-4 text-gray-700"
+                                                                lineNumber: 528,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 523,
+                                                            columnNumber: 27
+                                                        }, this),
+                                                        hasSubfields && fieldData.subfields && Object.values(fieldData.subfields)?.some((subfield)=>subfield.count > 0) ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("space-y-2", isNarrow ? "col-span-full" : "col-span-6"),
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                    onClick: ()=>toggleSubfield(fieldName, 'all'),
+                                                                    className: "flex items-center justify-between p-2 bg-white rounded-md border border-gray-300 hover:bg-gray-50 transition-colors w-auto",
+                                                                    "aria-expanded": isSubfieldExpanded(fieldName, 'all'),
+                                                                    "aria-controls": `subfields-${fieldName}`,
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                            variant: "body",
+                                                                            className: "font-medium",
+                                                                            children: "Subfields"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 592,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform ml-2", isSubfieldExpanded(fieldName, 'all') ? "rotate-180" : "")
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 593,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 586,
+                                                                    columnNumber: 31
+                                                                }, this),
+                                                                isSubfieldExpanded(fieldName, 'all') && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    id: `subfields-${fieldName}`,
+                                                                    className: "space-y-4 mt-2",
+                                                                    children: Object.entries(fieldData.subfields).filter(isValidSubfield).sort(([a], [b])=>a.localeCompare(b)).map(([subfieldName, subfieldData])=>{
+                                                                        const isExpanded = isSubfieldExpanded(fieldName, subfieldName);
+                                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("rounded-lg border border-gray-200 overflow-hidden", isNarrow ? "" : "ml-6"),
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                                    onClick: ()=>toggleSubfield(fieldName, subfieldName),
+                                                                                    className: "w-full px-4 py-3 flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors",
+                                                                                    "aria-expanded": isExpanded,
+                                                                                    "aria-controls": `subfield-content-${fieldName}-${subfieldName}`,
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "flex items-center gap-2",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                    variant: "body",
+                                                                                                    className: "font-medium",
+                                                                                                    children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 626,
+                                                                                                    columnNumber: 47
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
+                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tooltip"], {
+                                                                                                        children: [
+                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipTrigger"], {
+                                                                                                                asChild: true,
+                                                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                                                    className: "inline-flex p-1 hover:bg-gray-200 rounded-full transition-colors",
+                                                                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
+                                                                                                                        className: "h-4 w-4 text-gray-700"
+                                                                                                                    }, void 0, false, {
+                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                        lineNumber: 634,
+                                                                                                                        columnNumber: 55
+                                                                                                                    }, this)
                                                                                                                 }, void 0, false, {
                                                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                    lineNumber: 621,
-                                                                                                                    columnNumber: 51
+                                                                                                                    lineNumber: 633,
+                                                                                                                    columnNumber: 53
                                                                                                                 }, this)
                                                                                                             }, void 0, false, {
                                                                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 620,
-                                                                                                                columnNumber: 49
+                                                                                                                lineNumber: 632,
+                                                                                                                columnNumber: 51
+                                                                                                            }, this),
+                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
+                                                                                                                className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
+                                                                                                                children: [
+                                                                                                                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDescription"])(fieldName, subfieldName),
+                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                                                        href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldUrl"])(fieldName, subfieldName),
+                                                                                                                        target: "_blank",
+                                                                                                                        rel: "noopener noreferrer",
+                                                                                                                        className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
+                                                                                                                        "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)} (opens in new tab)`,
+                                                                                                                        children: "Learn more"
+                                                                                                                    }, void 0, false, {
+                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                        lineNumber: 639,
+                                                                                                                        columnNumber: 53
+                                                                                                                    }, this)
+                                                                                                                ]
+                                                                                                            }, void 0, true, {
+                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                lineNumber: 637,
+                                                                                                                columnNumber: 51
                                                                                                             }, this)
+                                                                                                        ]
+                                                                                                    }, void 0, true, {
+                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                        lineNumber: 631,
+                                                                                                        columnNumber: 49
+                                                                                                    }, this)
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 630,
+                                                                                                    columnNumber: 47
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 625,
+                                                                                            columnNumber: 45
+                                                                                        }, this),
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "flex items-center gap-4",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "flex items-center gap-2",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                                            value: subfieldData.completeness * 100,
+                                                                                                            className: "h-2 w-24 bg-[#EBF0F5]",
+                                                                                                            indicatorClassName: "bg-gray-900"
                                                                                                         }, void 0, false, {
                                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                            lineNumber: 619,
-                                                                                                            columnNumber: 47
+                                                                                                            lineNumber: 654,
+                                                                                                            columnNumber: 49
                                                                                                         }, this),
-                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
-                                                                                                            className: "text-xs sm:text-sm text-gray-700 whitespace-normal break-words text-popover max-w-xs",
-                                                                                                            children: [
-                                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDescription"])(fieldName, subfieldName),
-                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                                                                                    href: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldUrl"])(fieldName, subfieldName),
-                                                                                                                    target: "_blank",
-                                                                                                                    rel: "noopener noreferrer",
-                                                                                                                    className: "text-blue-700 hover:underline block mt-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500",
-                                                                                                                    "aria-label": `Learn more about ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)} (opens in new tab)`,
-                                                                                                                    children: "Learn more"
-                                                                                                                }, void 0, false, {
-                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                    lineNumber: 626,
-                                                                                                                    columnNumber: 49
-                                                                                                                }, this)
-                                                                                                            ]
-                                                                                                        }, void 0, true, {
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(subfieldData.completeness)
+                                                                                                        }, void 0, false, {
                                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                            lineNumber: 624,
-                                                                                                            columnNumber: 47
+                                                                                                            lineNumber: 659,
+                                                                                                            columnNumber: 49
                                                                                                         }, this)
                                                                                                     ]
                                                                                                 }, void 0, true, {
                                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                    lineNumber: 618,
-                                                                                                    columnNumber: 45
+                                                                                                    lineNumber: 653,
+                                                                                                    columnNumber: 47
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                                                                                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform", isExpanded ? "rotate-180" : "")
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 666,
+                                                                                                    columnNumber: 47
                                                                                                 }, this)
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 617,
-                                                                                                columnNumber: 43
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 612,
-                                                                                        columnNumber: 41
-                                                                                    }, this),
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "flex items-center gap-4",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "flex items-center gap-2",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                                        value: subfieldData.completeness * 100,
-                                                                                                        className: "h-2 w-24 bg-[#EBF0F5]",
-                                                                                                        indicatorClassName: "bg-gray-900"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 641,
-                                                                                                        columnNumber: 45
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(subfieldData.completeness)
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 646,
-                                                                                                        columnNumber: 45
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 640,
-                                                                                                columnNumber: 43
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                                                                                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("h-4 w-4 text-gray-500 transition-transform", isExpanded ? "rotate-180" : "")
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 653,
-                                                                                                columnNumber: 43
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 639,
-                                                                                        columnNumber: 41
-                                                                                    }, this)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 606,
-                                                                                columnNumber: 39
-                                                                            }, this),
-                                                                            isExpanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                id: `subfield-content-${fieldName}-${subfieldName}`,
-                                                                                className: "px-4 py-3",
-                                                                                children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                        className: "grid grid-cols-3 gap-4",
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: "Present"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 669,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.count.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 670,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 668,
-                                                                                                columnNumber: 45
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: [
-                                                                                                            "Missing-",
-                                                                                                            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
-                                                                                                        ]
-                                                                                                    }, void 0, true, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 675,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.missing.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 676,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 674,
-                                                                                                columnNumber: 45
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-1",
-                                                                                                children: [
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "small",
-                                                                                                        className: "text-gray-700",
-                                                                                                        children: "Instances"
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 681,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this),
-                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                        variant: "body",
-                                                                                                        className: "font-medium",
-                                                                                                        children: subfieldData.instances.toLocaleString()
-                                                                                                    }, void 0, false, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 682,
-                                                                                                        columnNumber: 47
-                                                                                                    }, this)
-                                                                                                ]
-                                                                                            }, void 0, true, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 680,
-                                                                                                columnNumber: 45
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true, {
-                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 667,
-                                                                                        columnNumber: 43
-                                                                                    }, this),
-                                                                                    subfieldData.values && Object.keys(subfieldData.values).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
-                                                                                        children: [
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "border-t border-gray-200 my-4"
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 689,
-                                                                                                columnNumber: 47
-                                                                                            }, this),
-                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                className: "space-y-2",
-                                                                                                children: Object.entries(subfieldData.values).filter((entry)=>entry[1] > 0).sort((a, b)=>b[1] - a[1]).map(([valueKey, valueCount])=>{
-                                                                                                    const percentage = valueCount / subfieldData.instances * 100;
-                                                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                        className: "space-y-1",
-                                                                                                        children: [
-                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                className: "flex justify-between items-center",
-                                                                                                                children: [
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                        variant: "body",
-                                                                                                                        className: "font-medium",
-                                                                                                                        children: valueKey
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 699,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this),
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                        variant: "body",
-                                                                                                                        className: "text-gray-600",
-                                                                                                                        children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(percentage / 100)
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 702,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this)
-                                                                                                                ]
-                                                                                                            }, void 0, true, {
-                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 698,
-                                                                                                                columnNumber: 57
-                                                                                                            }, this),
-                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                className: "relative",
-                                                                                                                children: [
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
-                                                                                                                        value: percentage,
-                                                                                                                        className: "h-2 bg-[#EBF0F5]",
-                                                                                                                        indicatorClassName: "bg-gray-900"
-                                                                                                                    }, void 0, false, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 707,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this),
-                                                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                                                        className: "flex justify-between items-center mt-1",
-                                                                                                                        children: [
-                                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                                variant: "small",
-                                                                                                                                className: "text-gray-600",
-                                                                                                                                children: "log scale"
-                                                                                                                            }, void 0, false, {
-                                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                                lineNumber: 713,
-                                                                                                                                columnNumber: 61
-                                                                                                                            }, this),
-                                                                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
-                                                                                                                                variant: "small",
-                                                                                                                                className: "text-gray-600 tabular-nums",
-                                                                                                                                children: [
-                                                                                                                                    valueCount.toLocaleString(),
-                                                                                                                                    " / ",
-                                                                                                                                    subfieldData.instances.toLocaleString()
-                                                                                                                                ]
-                                                                                                                            }, void 0, true, {
-                                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                                lineNumber: 716,
-                                                                                                                                columnNumber: 61
-                                                                                                                            }, this)
-                                                                                                                        ]
-                                                                                                                    }, void 0, true, {
-                                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                        lineNumber: 712,
-                                                                                                                        columnNumber: 59
-                                                                                                                    }, this)
-                                                                                                                ]
-                                                                                                            }, void 0, true, {
-                                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                                lineNumber: 706,
-                                                                                                                columnNumber: 57
-                                                                                                            }, this)
-                                                                                                        ]
-                                                                                                    }, valueKey, true, {
-                                                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                        lineNumber: 697,
-                                                                                                        columnNumber: 55
-                                                                                                    }, this);
-                                                                                                })
-                                                                                            }, void 0, false, {
-                                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                                lineNumber: 690,
-                                                                                                columnNumber: 47
-                                                                                            }, this)
-                                                                                        ]
-                                                                                    }, void 0, true)
-                                                                                ]
-                                                                            }, void 0, true, {
-                                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                lineNumber: 663,
-                                                                                columnNumber: 41
-                                                                            }, this)
-                                                                        ]
-                                                                    }, subfieldName, true, {
-                                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 599,
-                                                                        columnNumber: 37
-                                                                    }, this);
-                                                                })
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 589,
-                                                                columnNumber: 29
-                                                            }, this)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 569,
-                                                        columnNumber: 25
-                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        style: {
-                                                            height: "46px"
-                                                        }
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 736,
-                                                        columnNumber: 25
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 652,
+                                                                                            columnNumber: 45
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 619,
+                                                                                    columnNumber: 43
+                                                                                }, this),
+                                                                                isExpanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    id: `subfield-content-${fieldName}-${subfieldName}`,
+                                                                                    className: "px-4 py-3",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                            className: "grid grid-cols-3 gap-4",
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: "Present"
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 682,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.count.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 683,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 681,
+                                                                                                    columnNumber: 49
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: [
+                                                                                                                "Missing-",
+                                                                                                                (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getSubfieldDisplayLabel"])(fieldName, subfieldName)
+                                                                                                            ]
+                                                                                                        }, void 0, true, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 688,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.missing.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 689,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 687,
+                                                                                                    columnNumber: 49
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-1",
+                                                                                                    children: [
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "small",
+                                                                                                            className: "text-gray-700",
+                                                                                                            children: "Instances"
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 694,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this),
+                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                            variant: "body",
+                                                                                                            className: "font-medium",
+                                                                                                            children: subfieldData.instances.toLocaleString()
+                                                                                                        }, void 0, false, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 695,
+                                                                                                            columnNumber: 51
+                                                                                                        }, this)
+                                                                                                    ]
+                                                                                                }, void 0, true, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 693,
+                                                                                                    columnNumber: 49
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                            lineNumber: 680,
+                                                                                            columnNumber: 47
+                                                                                        }, this),
+                                                                                        subfieldData.values && Object.keys(subfieldData.values).length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+                                                                                            children: [
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "border-t border-gray-200 my-4"
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 702,
+                                                                                                    columnNumber: 51
+                                                                                                }, this),
+                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                    className: "space-y-2",
+                                                                                                    children: Object.entries(subfieldData.values).filter((entry)=>entry[1] > 0).sort((a, b)=>b[1] - a[1]).map(([valueKey, valueCount])=>{
+                                                                                                        const percentage = valueCount / subfieldData.instances * 100;
+                                                                                                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                            className: "space-y-1",
+                                                                                                            children: [
+                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                    className: "flex justify-between items-center",
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                            variant: "body",
+                                                                                                                            className: "font-medium",
+                                                                                                                            children: valueKey
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 712,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this),
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                            variant: "body",
+                                                                                                                            className: "text-gray-600",
+                                                                                                                            children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(percentage / 100)
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 715,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this)
+                                                                                                                    ]
+                                                                                                                }, void 0, true, {
+                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                    lineNumber: 711,
+                                                                                                                    columnNumber: 61
+                                                                                                                }, this),
+                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                    className: "relative",
+                                                                                                                    children: [
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
+                                                                                                                            value: percentage,
+                                                                                                                            className: "h-2 bg-[#EBF0F5]",
+                                                                                                                            indicatorClassName: "bg-gray-900"
+                                                                                                                        }, void 0, false, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 720,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this),
+                                                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                                                            className: "flex justify-between items-center mt-1",
+                                                                                                                            children: [
+                                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                                    variant: "small",
+                                                                                                                                    className: "text-gray-600",
+                                                                                                                                    children: "log scale"
+                                                                                                                                }, void 0, false, {
+                                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                                    lineNumber: 726,
+                                                                                                                                    columnNumber: 65
+                                                                                                                                }, this),
+                                                                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
+                                                                                                                                    variant: "small",
+                                                                                                                                    className: "text-gray-600 tabular-nums",
+                                                                                                                                    children: [
+                                                                                                                                        valueCount.toLocaleString(),
+                                                                                                                                        " / ",
+                                                                                                                                        subfieldData.instances.toLocaleString()
+                                                                                                                                    ]
+                                                                                                                                }, void 0, true, {
+                                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                                    lineNumber: 729,
+                                                                                                                                    columnNumber: 65
+                                                                                                                                }, this)
+                                                                                                                            ]
+                                                                                                                        }, void 0, true, {
+                                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                            lineNumber: 725,
+                                                                                                                            columnNumber: 63
+                                                                                                                        }, this)
+                                                                                                                    ]
+                                                                                                                }, void 0, true, {
+                                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                                    lineNumber: 719,
+                                                                                                                    columnNumber: 61
+                                                                                                                }, this)
+                                                                                                            ]
+                                                                                                        }, valueKey, true, {
+                                                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                            lineNumber: 710,
+                                                                                                            columnNumber: 59
+                                                                                                        }, this);
+                                                                                                    })
+                                                                                                }, void 0, false, {
+                                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                                    lineNumber: 703,
+                                                                                                    columnNumber: 51
+                                                                                                }, this)
+                                                                                            ]
+                                                                                        }, void 0, true)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                                    lineNumber: 676,
+                                                                                    columnNumber: 45
+                                                                                }, this)
+                                                                            ]
+                                                                        }, subfieldName, true, {
+                                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                            lineNumber: 612,
+                                                                            columnNumber: 41
+                                                                        }, this);
+                                                                    })
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                                    lineNumber: 602,
+                                                                    columnNumber: 33
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 582,
+                                                            columnNumber: 29
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            style: {
+                                                                height: "46px"
+                                                            }
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                                            lineNumber: 749,
+                                                            columnNumber: 29
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/components/common/field-stats.tsx",
+                                                    lineNumber: 453,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                lineNumber: 440,
-                                                columnNumber: 21
+                                                lineNumber: 452,
+                                                columnNumber: 23
+                                            }, this)
+                                        }, fieldName, false, {
+                                            fileName: "[project]/src/components/common/field-stats.tsx",
+                                            lineNumber: 451,
+                                            columnNumber: 21
+                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                children: "MISSING"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/common/field-stats.tsx",
+                                                lineNumber: 757,
+                                                columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                            lineNumber: 439,
-                                            columnNumber: 19
+                                            lineNumber: 756,
+                                            columnNumber: 21
                                         }, this)
                                     }, fieldName, false, {
                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                        lineNumber: 438,
+                                        lineNumber: 449,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                lineNumber: 433,
+                                lineNumber: 444,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/common/field-stats.tsx",
-                        lineNumber: 431,
+                        lineNumber: 442,
                         columnNumber: 9
                     }, this)
                 ]
@@ -3874,12 +3910,12 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                             children: getCategoryTitle(category)
                         }, void 0, false, {
                             fileName: "[project]/src/components/common/field-stats.tsx",
-                            lineNumber: 770,
+                            lineNumber: 791,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/common/field-stats.tsx",
-                        lineNumber: 769,
+                        lineNumber: 790,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -3908,7 +3944,7 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                                                         children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(field)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 783,
+                                                                        lineNumber: 804,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDescription"])(field) && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipProvider"], {
@@ -3923,17 +3959,17 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                                                                             className: "h-4 w-4 text-gray-700"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                            lineNumber: 798,
+                                                                                            lineNumber: 819,
                                                                                             columnNumber: 37
                                                                                         }, this)
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                        lineNumber: 794,
+                                                                                        lineNumber: 815,
                                                                                         columnNumber: 35
                                                                                     }, this)
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 793,
+                                                                                    lineNumber: 814,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$tooltip$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TooltipContent"], {
@@ -3949,45 +3985,48 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                                                                             children: "Learn more"
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                            lineNumber: 803,
+                                                                                            lineNumber: 824,
                                                                                             columnNumber: 35
                                                                                         }, this)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                                    lineNumber: 801,
+                                                                                    lineNumber: 822,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                            lineNumber: 792,
+                                                                            lineNumber: 813,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                        lineNumber: 791,
+                                                                        lineNumber: 812,
                                                                         columnNumber: 29
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 782,
+                                                                lineNumber: 803,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$typography$2f$typography$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Text"], {
                                                                 variant: "small",
                                                                 className: "text-gray-900 font-semibold text-sm whitespace-nowrap",
-                                                                children: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness)
-                                                            }, void 0, false, {
+                                                                children: [
+                                                                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["formatCompleteness"])(completeness) || 0,
+                                                                    " - TEST"
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                                lineNumber: 817,
+                                                                lineNumber: 838,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 781,
+                                                        lineNumber: 802,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$progress$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Progress"], {
@@ -3997,7 +4036,7 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                                         "aria-label": `${(0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFieldDisplayLabel"])(field)} completion progress`
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 824,
+                                                        lineNumber: 845,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4013,31 +4052,31 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/components/common/field-stats.tsx",
-                                                            lineNumber: 831,
+                                                            lineNumber: 852,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                                        lineNumber: 830,
+                                                        lineNumber: 851,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                lineNumber: 780,
+                                                lineNumber: 801,
                                                 columnNumber: 21
                                             }, this),
                                             Object.entries(sortedGroupedFields[category] || {}).length > 1 && field !== Object.keys(sortedGroupedFields[category] || {}).slice(-1)[0] && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "mt-4 border-b border-gray-200"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/common/field-stats.tsx",
-                                                lineNumber: 838,
+                                                lineNumber: 859,
                                                 columnNumber: 25
                                             }, this)
                                         ]
                                     }, field, true, {
                                         fileName: "[project]/src/components/common/field-stats.tsx",
-                                        lineNumber: 779,
+                                        lineNumber: 800,
                                         columnNumber: 19
                                     }, this);
                                 }),
@@ -4051,29 +4090,29 @@ const SummaryFieldStats = ({ groupedFields, categories })=>{
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/common/field-stats.tsx",
-                                    lineNumber: 844,
+                                    lineNumber: 865,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/common/field-stats.tsx",
-                            lineNumber: 775,
+                            lineNumber: 796,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/common/field-stats.tsx",
-                        lineNumber: 774,
+                        lineNumber: 795,
                         columnNumber: 11
                     }, this)
                 ]
             }, category, true, {
                 fileName: "[project]/src/components/common/field-stats.tsx",
-                lineNumber: 768,
+                lineNumber: 789,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/common/field-stats.tsx",
-        lineNumber: 766,
+        lineNumber: 787,
         columnNumber: 5
     }, this);
 };
@@ -4107,24 +4146,24 @@ function FieldStats({ stats, viewMode }) {
                 stats: statsData
             }, void 0, false, {
                 fileName: "[project]/src/components/common/field-stats.tsx",
-                lineNumber: 877,
+                lineNumber: 898,
                 columnNumber: 11
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SummaryFieldStats, {
                 groupedFields: groupedFields,
                 categories: categories
             }, void 0, false, {
                 fileName: "[project]/src/components/common/field-stats.tsx",
-                lineNumber: 879,
+                lineNumber: 900,
                 columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/common/field-stats.tsx",
-            lineNumber: 875,
+            lineNumber: 896,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/common/field-stats.tsx",
-        lineNumber: 874,
+        lineNumber: 895,
         columnNumber: 5
     }, this);
 }
@@ -4170,12 +4209,12 @@ function CompareFieldStats({ stats, figshareStats, viewMode }) {
                     figshare: figshareData
                 }, void 0, false, {
                     fileName: "[project]/src/components/common/field-stats.tsx",
-                    lineNumber: 925,
+                    lineNumber: 946,
                     columnNumber: 13
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/common/field-stats.tsx",
-                lineNumber: 924,
+                lineNumber: 945,
                 columnNumber: 11
             }, this)
         }, void 0, false) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$layout$2f$container$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Container"], {
@@ -4185,17 +4224,17 @@ function CompareFieldStats({ stats, figshareStats, viewMode }) {
                 categories: categories
             }, void 0, false, {
                 fileName: "[project]/src/components/common/field-stats.tsx",
-                lineNumber: 930,
+                lineNumber: 951,
                 columnNumber: 11
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/components/common/field-stats.tsx",
-            lineNumber: 929,
+            lineNumber: 950,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/common/field-stats.tsx",
-        lineNumber: 921,
+        lineNumber: 942,
         columnNumber: 5
     }, this);
 }
