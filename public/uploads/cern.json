@@ -1,0 +1,303 @@
+{
+  "data": {
+    "id": "cern",
+    "type": "providers",
+    "attributes": {
+      "name": "CERN - European Organization for Nuclear Research",
+      "displayName": "CERN - European Organization for Nuclear Research",
+      "symbol": "CERN",
+      "website": "http://doi.web.cern.ch/",
+      "description": "CERN, the European Organization for Nuclear Research, is the world's largest particle physics laboratory. Founded in 1954 and based on the Franco-Swiss border near Geneva, it was one of Europe's first joint ventures and now has 21 member states and more than 50 cooperation agreements and scientific contacts with other countries.\n\nAt CERN, physicists and engineers probe the fundamental structure of the universe. They use the world's largest and most complex scientific instrument, the Large Hadron Collider (LHC), to study the basic constituents of matter. The results of their experimental and theoretical work are publicly available following CERN's Open Access Policy.\n\nCERN services implementing DOIs are its institutional repository (CDS, CERN Document Server); INSPIRE-HEP, a digital library for the field of High-Energy Physics run in collaboration with other institutions; or the CERN Open Data Portal, which provides high level and analyzable data and software from the LHC experiments.\n\nFurthermore, CERN is also providing DOIs to ZENODO, a multidisciplinary data repository for the “long tail” of research results. It allows researchers to share and preserve their output independent of size, type of material or discipline.",
+      "region": "EMEA",
+      "country": "CH",
+      "logoUrl": "https://assets.datacite.org/images/members/cern.png?1583251170",
+      "memberType": "direct_member",
+      "organizationType": "researchInstitution",
+      "focusArea": "engineeringAndTechnology",
+      "nonProfitStatus": "non-profit",
+      "isActive": true,
+      "joined": "2014-03-25",
+      "rorId": "https://ror.org/01ggx4157",
+      "created": "2014-04-10T13:41:44.000Z",
+      "updated": "2025-01-09T12:45:51.000Z",
+      "doiEstimate": 0
+    },
+    "relationships": {
+      "clients": [
+        "cern.cds",
+        "cern.env",
+        "cern.cij",
+        "cern.opendata",
+        "cern.proc",
+        "cern.yellow",
+        "cern.yrmono",
+        "cern.yrconf",
+        "cern.yrschool",
+        "cern.hepdata",
+        "cern.inspire",
+        "cern.jacow",
+        "cern.prise",
+        "cern.zuifpg",
+        "cern.zenodo"
+      ]
+    },
+    "stats": {
+      "summary": {
+        "count": 7078444,
+        "fields": {
+          "alternateIdentifier": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "identifier": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "language": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "geoLocations": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "rights": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "title": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "publicationYear": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "resourceType": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "date": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Not in schema",
+            "completeness": 1
+          },
+          "relatedItems": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "formats": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "subjects": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "version": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1
+          },
+          "relatedIdentifiers": {
+            "count": 9000,
+            "instance": 98896,
+            "missing": 0,
+            "field_status": "Optional",
+            "completeness": 1,
+            "subfields": {
+              "relationType": {
+                "count": 7247,
+                "instance": 98896,
+                "missing": 1753,
+                "field_status": "Optional",
+                "completeness": 0.8052222222222222
+              },
+              "relatedIdentifierType": {
+                "count": 7247,
+                "instance": 98896,
+                "missing": 1753,
+                "field_status": "Optional",
+                "completeness": 0.8052222222222222
+              },
+              "resourceTypeGeneral": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Optional",
+                "completeness": 0
+              }
+            }
+          },
+          "contributors": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          },
+          "creators": {
+            "count": 9000,
+            "instance": 57620,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1,
+            "subfields": {
+              "affiliation": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Optional",
+                "completeness": 0
+              },
+              "nameType": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "affiliationIdentifier": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "affiliationIdentifierScheme": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "nameIdentifierScheme": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "nameIdentifier": {
+                "count": 9000,
+                "instance": 57620,
+                "missing": 0,
+                "field_status": "Optional",
+                "completeness": 1
+              }
+            }
+          },
+          "fundingReferences": {
+            "count": 9000,
+            "instance": 1880,
+            "missing": 0,
+            "field_status": "Mandatory",
+            "completeness": 1,
+            "subfields": {
+              "awardURI": {
+                "count": 0,
+                "instance": 209,
+                "missing": 9000,
+                "field_status": "Optional",
+                "completeness": 0
+              },
+              "awardTitle": {
+                "count": 1252,
+                "instance": 1880,
+                "missing": 7748,
+                "field_status": "Mandatory",
+                "completeness": 0.1391111111111111
+              },
+              "awardNumber": {
+                "count": 1252,
+                "instance": 1880,
+                "missing": 7748,
+                "field_status": "Optional",
+                "completeness": 0.1391111111111111
+              },
+              "funderIdentifierType": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "funderIdentifier": {
+                "count": 0,
+                "instance": 0,
+                "missing": 9000,
+                "field_status": "Not in schema",
+                "completeness": 0
+              },
+              "funderNameFunding": {
+                "count": 1252,
+                "instance": 1880,
+                "missing": 7748,
+                "field_status": "Optional",
+                "completeness": 0.1391111111111111
+              }
+            }
+          },
+          "sizes": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Not in schema",
+            "completeness": 1
+          },
+          "description": {
+            "count": 9000,
+            "instance": 9000,
+            "missing": 0,
+            "field_status": "Not in schema",
+            "completeness": 1
+          },
+          "publisher": {
+            "count": 0,
+            "instance": 0,
+            "missing": 9000,
+            "field_status": "Not in schema",
+            "completeness": 0
+          }
+        }
+      }
+    }
+  }
+}
